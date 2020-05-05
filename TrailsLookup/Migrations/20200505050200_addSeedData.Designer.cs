@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TrailsLookup.Models;
 
 namespace TrailsLookup.Migrations
 {
     [DbContext(typeof(TrailsLookupContext))]
-    partial class TrailsLookupContextModelSnapshot : ModelSnapshot
+    [Migration("20200505050200_addSeedData")]
+    partial class addSeedData
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -175,7 +177,7 @@ namespace TrailsLookup.Migrations
                             FirstAdjoiningSegment2 = 2038,
                             GeoObjNumber = 2037,
                             Miles = 0.28158196000000002,
-                            Name = "Macleay Trail",
+                            Name = "	Macleay Trail",
                             SecondAdjoiningSegment1 = 2035,
                             SecondAdjoiningSegment2 = 2036,
                             Surface = "soil",
