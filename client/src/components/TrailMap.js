@@ -1,4 +1,4 @@
-import React, { setState } from 'react';
+import React, { useState } from 'react';
 import { Map, TileLayer, GeoJSON } from 'react-leaflet';
 import { trailData } from '../data/data.js';
 // import styled from 'styled-components';
@@ -9,37 +9,32 @@ import '../index.css';
 //   height: ${props => props.height};
 // `;
 
-const featureStyle = {
-  color: '#749774'
-}
+function TrailMap() {
 
-const popupOptions = {
-  className: 'custom-popup'
-}
+  const [selectedSegment, changeSelectedSegment] = useState(null);
+  const [selectedTarget, changeTarget] = useState(null)
+  // const [otherSegmentsOfSameName, getCompleteTrail] = useState(null);
 
-class TrailMap extends React.Component {
-
-  constructor(props) {
-    super(props);
-    this.state = {
-      selectedSegment: null,
-      otherSegmentsOfSameName: null
-    }
+  const featureStyle = {
+    color: '#749774'
+  }
+  const popupOptions = {
+    className: 'custom-popup'
   }
 
-  selectTrail = (feature) => {
+  const highlightTrail = (feature) => {
     return {
       color: '#111111'
     }
   };
 
-  deselectTrail = (feature) => {
+  const deselectTrail = (feature) => {
     return {
       color: '#749774'
     }
   }
 
-  onEachFeature = (feature, layer) => {
+  const onEachFeature = (feature, layer) => {
     const popupContent = `
       <strong>${feature.properties.Name}</strong><br/>
       ${feature.properties.Type}<br/>
@@ -55,28 +50,25 @@ class TrailMap extends React.Component {
       //   resetColor(event.target);
       // },
       'click': (event) => {
-        if (this.selectedSegment != null) {
-          const activeTrail = this.selectedSegment;
-          activeTrail.setStyle(this.deselectTrail(activeTrail));
+        if (selectedTarget !== null) {
+          selectedTarget.setStyle(deselectTrail());
         }
-        let selection = event.target;
-        this.setState({selectedSegment: selection});
-        selection.setStyle(this.selectTrail(selection));
+        layer.setStyle(highlightTrail());
+        changeTarget(layer);
+        changeSelectedSegment(event.target.feature);
       }
     });
   };
 
-  render() {
     return (
       <Map center={[45.5252, -122.7163]} zoom={13}>
         <TileLayer 
           url="https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png"
           maxZoom={20}
         />
-        <GeoJSON data={trailData} style={featureStyle} onEachFeature={this.onEachFeature} />
+        <GeoJSON id="trailLayer" data={trailData} style={featureStyle} onEachFeature={onEachFeature} />
       </Map>
     );
   }
-}
 
 export default TrailMap;

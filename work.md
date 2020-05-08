@@ -11,3 +11,5 @@
 * 10:30am - successfully displayed geojson features on map! Now, beginning the process of making each feature interactive.
 
 * 12:15pm - successfully changed color of selected trail segment on mouse click, but need to implement method to remove the selected color from previously-clicked trails (to only have a different color for the currently clicked trail).
+
+* 1:45pm - have been switching between using a functional component with state hooks and using a class component to change colors of selected trail. still unable to deselect previous trail.
