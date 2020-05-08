@@ -13,3 +13,5 @@
 * 12:15pm - successfully changed color of selected trail segment on mouse click, but need to implement method to remove the selected color from previously-clicked trails (to only have a different color for the currently clicked trail).
 
 * 1:45pm - have been switching between using a functional component with state hooks and using a class component to change colors of selected trail. still unable to deselect previous trail.
+
+2:55 - spent the past hour scouring stackoverflow and google for solutions to the color issue I'm experiencing. still troubleshooting.
