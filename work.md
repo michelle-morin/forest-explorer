@@ -23,3 +23,6 @@
 * 4:15 - implemented mouseover/mouseout color changes for trails, but color change on click now reverts to default style on mouseout :(
 
 * 4:45 - updated prose in proposal and touched up readme
+
+* 4:50pm - current state of the trail exploration page (TrailMap component). This is a static shot; the map is a slippy map with pan/zoom:
+![trail map](/planning/progress-photo.png)
