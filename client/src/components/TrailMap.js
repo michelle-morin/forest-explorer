@@ -1,6 +1,6 @@
 import React from 'react';
 import { Map, TileLayer, GeoJSON } from 'react-leaflet';
-import { trailData } from '../data/data.geojson';
+import { trailData } from '../data/data.js';
 // import styled from 'styled-components';
 import '../index.css';
 
