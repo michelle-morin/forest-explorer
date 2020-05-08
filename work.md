@@ -14,4 +14,6 @@
 
 * 1:45pm - have been switching between using a functional component with state hooks and using a class component to change colors of selected trail. still unable to deselect previous trail.
 
-2:55 - spent the past hour scouring stackoverflow and google for solutions to the color issue I'm experiencing. still troubleshooting.
+* 2:55pm - spent the past hour scouring stackoverflow and google for solutions to the color issue I'm experiencing. still troubleshooting.
+
+* 3:20pm - have not resolved color changing issue, but shifting gears to start working on a wireframe and component tree for the frontend. 
