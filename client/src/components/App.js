@@ -1,9 +1,9 @@
 import React from 'react';
+import TrailMap from './TrailMap';
 
 function App() {
   return (
-    <div>
-    </div>
+    <TrailMap />
   );
 }
 
