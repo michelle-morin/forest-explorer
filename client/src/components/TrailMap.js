@@ -11,27 +11,20 @@ import '../index.css';
 
 function TrailMap() {
 
-  const [selectedSegment, changeSelectedSegment] = useState(null);
   const [selectedTarget, changeTarget] = useState(null)
   // const [otherSegmentsOfSameName, getCompleteTrail] = useState(null);
 
   const featureStyle = {
     color: '#749774'
   }
+  const hoverStyle = {
+    color: '#d4af37'
+  }
+  const selectedStyle = {
+    color: '#0d120d'
+  }
   const popupOptions = {
     className: 'custom-popup'
-  }
-
-  const highlightTrail = (feature) => {
-    return {
-      color: '#111111'
-    }
-  };
-
-  const deselectTrail = (feature) => {
-    return {
-      color: '#749774'
-    }
   }
 
   const onEachFeature = (feature, layer) => {
@@ -41,32 +34,34 @@ function TrailMap() {
       surface: ${feature.properties.Surface}<br/>
       ${feature.properties.Miles} miles
     `;
+    layer.setStyle(featureStyle);
     layer.bindPopup(popupContent, popupOptions);
     layer.on({
-      // 'mouseover': function (event) {
-      //   changeColor(event.target);
-      // },
-      // 'mouseout': function (event) {
-      //   resetColor(event.target);
-      // },
+      'mouseover': function (event) {
+        layer.setStyle(hoverStyle);
+      },
       'click': (event) => {
         if (selectedTarget !== null) {
-          selectedTarget.setStyle(deselectTrail());
+          selectedTarget.setStyle(featureStyle);
         }
-        layer.setStyle(highlightTrail());
+        layer.setStyle(selectedStyle);
         changeTarget(layer);
-        changeSelectedSegment(event.target.feature);
+      },
+      'mouseout': function (event) {
+        if (layer !== selectedTarget) {
+          layer.setStyle(featureStyle);
+        }
       }
     });
   };
 
     return (
-      <Map center={[45.5252, -122.7163]} zoom={13}>
+      <Map center={[45.545, -122.7163]} zoom={14}>
         <TileLayer 
           url="https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png"
           maxZoom={20}
         />
-        <GeoJSON id="trailLayer" data={trailData} style={featureStyle} onEachFeature={onEachFeature} />
+        <GeoJSON id="trailLayer" data={trailData} onEachFeature={onEachFeature} />
       </Map>
     );
   }

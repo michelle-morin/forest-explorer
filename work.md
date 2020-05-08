@@ -16,4 +16,8 @@
 
 * 2:55pm - spent the past hour scouring stackoverflow and google for solutions to the color issue I'm experiencing. still troubleshooting.
 
-* 3:20pm - have not resolved color changing issue, but shifting gears to start working on a wireframe and component tree for the frontend. 
+* 3:20pm - have not resolved color changing issue, but shifting gears to start working on a wireframe and component tree for the frontend.
+
+* 3:48pm - added component tree to readme;
+
+* 4:15 - implemented mouseover/mouseout color changes for trails, but color change on click now reverts to default style on mouseout :(
