@@ -16,3 +16,11 @@ code {
   width: 100%;
   height: 100vh;
 }
+
+.custom-popup .leaflet-popup-content-wrapper, .custom-popup .leaflet-popup-tip {
+  background-color: #eff3ef;
+  color: #111111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
