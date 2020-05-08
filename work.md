@@ -4,4 +4,6 @@
 
 * 8:10am - finished adding initial structure to README (description, tech used, specifications, setup/install)
 
-* 9:05 - finished re-writing project proposal
+* 9:05am - finished re-writing project proposal
+
+* 10am - finished making base map with React-Leaflet, shifting to tutorials/codealongs next to learn more about adding geojson features
