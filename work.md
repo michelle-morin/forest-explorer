@@ -21,3 +21,5 @@
 * 3:48pm - added component tree to readme;
 
 * 4:15 - implemented mouseover/mouseout color changes for trails, but color change on click now reverts to default style on mouseout :(
+
+* 4:45 - updated prose in proposal and touched up readme
