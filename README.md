@@ -29,7 +29,7 @@ This application will allow users to familiarize themselves with trails in Fores
 * _Open the .exe file and follow the steps provided by the installer for your OS._
 
 #### Install dotnet script
-_Enter the command ``dotnet tool install -g dotnet-script`` in Terminal (macOS) or PowerShell (Windows)._
+* Enter the command ``dotnet tool install -g dotnet-script`` in Terminal (macOS) or PowerShell (Windows).
 
 ### Install MySQL and MySQL Workbench
 
@@ -75,11 +75,11 @@ _Next, run the TrailsLookup web API backend by entering the following commands i
 * ``dotnet restore``
 * ``dotnet build``
 * ``dotnet ef database update``
-* ``dotnet run`` or ``dotnet watch run``
+* ``dotnet watch run``
 
 _In a separate Terminal or PowerShell, enter the following commands to run the React client front-end:_
 * ``cd ../client``
-* ``npm install`
+* ``npm install``
 * ``npm start``
 
 _To view/edit the source code of this application, open the contents of the forest-park-trails directory in a text editor or IDE of your choice (e.g., to open all contents of the directory in Visual Studio Code on macOS, enter the command_ ``code .`` _in Terminal at the root of the forest-park-trails directory)._
@@ -103,4 +103,5 @@ _To view/edit the source code of this application, open the contents of the fore
 
 ## License
 
-&copy; 2020 - Michelle Morin. All rights reserved.
+&copy; 2020 - Michelle Morin.  
+Under exclusive copyright. All rights reserved.
