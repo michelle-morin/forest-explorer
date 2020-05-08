@@ -13,6 +13,9 @@ This application will allow users to familiarize themselves with trails in Fores
 * On the splash page, a user should be able to click any trail segment in forest park to learn about the trail (name, distance in miles, type of trail, and surface type).
 * A should be able to navigate to a Routes page, where they can dynamically add and remove trail segments from a running/hiking route.
 
+## Component Tree
+![component tree](/planning/component-tree.jpg)
+
 ## Setup/Installation Requirements
 
 ### Install .NET Core
