@@ -1,6 +1,4 @@
-export const trailData = {
-	"type": "FeatureCollection",
-	"features": [{
+export const trailData = [{
 			"type": "Feature",
 			"properties": {
 				"TrailId": 215,
@@ -125331,4 +125329,3 @@ export const trailData = {
 			}
 		}
 	]
-}
