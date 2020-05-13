@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 using TrailsLookup.Models;
+using Microsoft.AspNetCore.Cors;
 
 namespace TrailsLookup.Controllers
 {
@@ -18,7 +19,7 @@ namespace TrailsLookup.Controllers
     }
 
     // GET 'api/trails'
-    // returns all trails or all trails matching query string name
+    [EnableCors("MyPolicy")]
     [HttpGet]
     public ActionResult<IEnumerable<Trail>> Get(string name)
     {
@@ -32,6 +33,7 @@ namespace TrailsLookup.Controllers
     }
 
     // GET 'api/trails/{id}'
+    [EnableCors("MyPolicy")]
     [HttpGet("{id}")]
     public ActionResult<Trail> Get(int id)
     {
