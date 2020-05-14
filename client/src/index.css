@@ -17,6 +17,11 @@ code {
   height: 100vh;
 }
 
+.route-map {
+  width: 70%;
+  height: 100vh;
+}
+
 .custom-popup .leaflet-popup-content-wrapper, .custom-popup .leaflet-popup-tip {
   background-color: #eff3ef;
   color: #111111;
