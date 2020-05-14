@@ -12,7 +12,7 @@ One of my main goals is to create a minimalist/modern user interface that mimics
 
 * The application includes a map of all trail segments in Forest Park.
 * Each trail segment is selectable to view details about the trail, including the name, distance in miles, type of trail, and surface type.
-* The application allows users to dynamically add trail segments to a route, as well s remove trail segments from the route.
+* The application allows users to dynamically add trail segments to a route, as well as remove trail segments from the route.
 * The application determines whether selected trail segments can be joined to form a route based on whether a selected segment adjoins another selected segment. 
 
 ### Implementing the MVP
