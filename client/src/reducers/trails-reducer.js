@@ -17,6 +17,11 @@ export default (state = initialState, action) => {
         isLoading: false,
         trails: action.trails
       });
+    case c.GET_TRAILS_FAILURE:
+      return Object.assign({}, state, {
+        isLoading: false,
+        error: action.error
+      });
     default:
       return state;
   }
