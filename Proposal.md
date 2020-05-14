@@ -33,6 +33,8 @@ One of my main goals is to create a minimalist/modern user interface that mimics
   * This feature may require adding a trailheads table to the database. Alternatively, I may store each trailhead as an entry in the trails table with a “type” property of “trailhead”.
 * render topographical data for forest park.
   * I would like to explore using the deckGL library for this feature.
+* add versioning and swagger documentation to API
+* add authentication/authorization to API, to only serve requests from the frontend client application
 
 ### Closing Thoughts
 
