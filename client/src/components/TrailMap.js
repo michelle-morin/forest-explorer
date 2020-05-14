@@ -7,8 +7,7 @@ class TrailMap extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedTarget: null,
-      otherSegmentsOfSameName: null
+      selectedTarget: null
     }
   }
 
