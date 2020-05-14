@@ -48,4 +48,17 @@ describe('trailsReducer', () => {
     });
   });
 
+  test('failing to get trails should change isLoading to false and add an error message to error', () => {
+    const error = "test error";
+    action = {
+      type: c.GET_TRAILS_FAILURE,
+      error
+    };
+    expect(trailsReducer(loadingState, action)).toEqual({
+      isLoading: false,
+      trails: [],
+      error: "test error"
+    });
+  });
+
 });
