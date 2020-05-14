@@ -17,7 +17,6 @@ namespace TrailsLookup
 
 		public IConfiguration Configuration { get; }
 
-		// This method gets called by the runtime. Use this method to add services to the container.
 		public void ConfigureServices(IServiceCollection services)
 		{
 			services.AddDbContext<TrailsLookupContext>(opt =>
@@ -28,13 +27,11 @@ namespace TrailsLookup
 			services.AddCors(o => o.AddPolicy
 			("MyPolicy", builder => {
 				builder.AllowAnyOrigin()
-				.AllowAnyMethod()
-				.AllowAnyHeader()
-				.AllowCredentials();
+				.WithMethods("GET")
+				.AllowAnyHeader();
 			}));
 		}
 
-		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
 		public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 		{
 			if (env.IsDevelopment())
@@ -47,6 +44,7 @@ namespace TrailsLookup
 				app.UseHsts();
 			}
 
+			app.UseCors();
 			// app.UseHttpsRedirection();
 			app.UseMvc();
 		}
