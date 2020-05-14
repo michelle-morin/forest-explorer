@@ -1,3 +1,5 @@
+import * as c from './../actions/ActionTypes';
+
 const initialState = {
   isLoading: false,
   trails: [],
@@ -5,5 +7,12 @@ const initialState = {
 };
 
 export default (state = initialState, action) => {
-  return state;
+  switch (action.type) {
+    case c.REQUEST_TRAILS:
+      return Object.assign({}, state, {
+        isLoading: true
+      });
+    default:
+      return state;
+  }
 };
