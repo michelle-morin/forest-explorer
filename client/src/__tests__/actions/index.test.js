@@ -23,4 +23,26 @@ describe('trailsReducer actions', () => {
       error
     });
   });
+
+  test('addSegmentToRoute should create ADD_SEGMENT_TO_ROUTE action', () => {
+    const target = 'target';
+    const id = 1;
+    const distance = 0.356;
+    expect(a.addSegmentToRoute(target, id, distance)).toEqual({
+      type: c.ADD_SEGMENT_TO_ROUTE,
+      selectedTarget: 'target',
+      selectedTrailId: 1,
+      trailDistance: 0.356
+    });
+  });
+
+  test('changeSelectedTrail should create CHANGE_SELECTED_TRAIL action', () => {
+    const target = 'test';
+    const id = 3;
+    expect(a.changeSelectedTrail(target, id)).toEqual({
+      type: c.CHANGE_SELECTED_TRAIL,
+      selectedTarget: 'test',
+      selectedTrailId: 3
+    });
+  });
 });

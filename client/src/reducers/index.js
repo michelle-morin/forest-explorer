@@ -3,7 +3,7 @@ import trailsReducer from './trails-reducer';
 import { combineReducers } from 'redux';
 
 const rootReducer = combineReducers({
-  trailsAPIResponse: trailsReducer,
+  trailsApiResponse: trailsReducer,
   mapInteractions: routeReducer
 });
 

@@ -27,3 +27,16 @@ export const getAllTrailsFromApi = () => {
       });
   }
 };
+
+export const changeSelectedTrail = (target, id) => ({
+  type: c.CHANGE_SELECTED_TRAIL,
+  selectedTarget: target,
+  selectedTrailId: id
+});
+
+export const addSegmentToRoute = (target, id, distance) => ({
+  type: c.ADD_SEGMENT_TO_ROUTE,
+  selectedTarget: target,
+  selectedTrailId: id,
+  trailDistance: distance
+});

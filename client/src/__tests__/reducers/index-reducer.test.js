@@ -9,7 +9,7 @@ let store = createStore(rootReducer);
 describe('rootReducer', () => {
   test('should return default state if no action type is recognized', () => {
     expect(rootReducer({}, { type: null })).toEqual({
-      trailsAPIResponse: {
+      trailsApiResponse: {
         isLoading: false,
         trails: [],
         error: null
@@ -24,7 +24,7 @@ describe('rootReducer', () => {
   });
 
   test('that initial state of trailsReducer matches rootReducer', () => {
-    expect(store.getState().trailsAPIResponse).toEqual(trailsReducer(undefined, { type: null }));
+    expect(store.getState().trailsApiResponse).toEqual(trailsReducer(undefined, { type: null }));
   });
 
   test('that initial state of routeReducer matches rootReducer', () => {
