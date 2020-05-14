@@ -19,6 +19,8 @@ export default (state = initialState, action) => {
       const newRoute = existingRoute.concat(action.selectedTrailId);
       const newDistance = state.routeDistance + action.trailDistance;
       return Object.assign({}, state, {
+        selectedTarget: action.selectedTarget,
+        selectedTrailId: action.selectedTrailId,
         verifiedRoute: newRoute,
         routeDistance: newDistance
       });

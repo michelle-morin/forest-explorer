@@ -44,6 +44,7 @@ describe('routeReducer', () => {
   test('adding a trail segment to a route should change the verifiedRoute to include the segment and update the total route distance', () => {
     action = {
       type: c.ADD_SEGMENT_TO_ROUTE,
+      selectedTarget: 'test',
       selectedTrailId: 1,
       trailDistance: 0.546
     };
