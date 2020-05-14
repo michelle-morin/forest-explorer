@@ -11,6 +11,13 @@ describe('routeReducer', () => {
     routeDistance: 0
   };
 
+  const selectedState = {
+    selectedTarget: 'test',
+    selectedTrailId: 1,
+    verifiedRoute: [],
+    routeDistance: 0
+  };
+
   it('should successfully return the default state if no action type is passed to the reducer', () => {
     expect(routeReducer(initialState, { type: null })).toEqual({
       selectedTarget: null,
@@ -34,5 +41,17 @@ describe('routeReducer', () => {
     });
   });
 
-
+  test('adding a trail segment to a route should change the verifiedRoute to include the segment and update the total route distance', () => {
+    action = {
+      type: c.ADD_SEGMENT_TO_ROUTE,
+      selectedTrailId: 1,
+      trailDistance: 0.546
+    };
+    expect(routeReducer(selectedState, action)).toEqual({
+      selectedTarget: 'test',
+      selectedTrailId: 1,
+      verifiedRoute: [1],
+      routeDistance: 0.546
+    });
+  });
 });

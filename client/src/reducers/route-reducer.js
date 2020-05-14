@@ -14,6 +14,14 @@ export default (state = initialState, action) => {
         selectedTarget: action.selectedTarget,
         selectedTrailId: action.selectedTrailId
       });
+    case c.ADD_SEGMENT_TO_ROUTE:
+      const existingRoute = state.verifiedRoute;
+      const newRoute = existingRoute.concat(action.selectedTrailId);
+      const newDistance = state.routeDistance + action.trailDistance;
+      return Object.assign({}, state, {
+        verifiedRoute: newRoute,
+        routeDistance: newDistance
+      });
     default:
       return state;
   }
