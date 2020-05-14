@@ -10,6 +10,12 @@ describe('trailsReducer', () => {
     error: null
   };
 
+  const loadingState = {
+    isLoading: true,
+    trails: [],
+    error: null
+  };
+
   it('should successfully return the default state if no action type is passed to the reducer', () => {
     expect(trailsReducer(initialState, { type: null })).toEqual({
       isLoading: false,
@@ -25,6 +31,19 @@ describe('trailsReducer', () => {
     expect(trailsReducer(initialState, action)).toEqual({
       isLoading: true,
       trails: [],
+      error: null
+    });
+  });
+
+  test('successfully getting trails should change isLoading to false and update trails', () => {
+    const trails = "test trail";
+    action = {
+      type: c.GET_TRAILS_SUCCESS,
+      trails
+    };
+    expect(trailsReducer(loadingState, action)).toEqual({
+      isLoading: false,
+      trails: "test trail",
       error: null
     });
   });
