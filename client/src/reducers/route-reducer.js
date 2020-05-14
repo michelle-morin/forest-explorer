@@ -1,3 +1,5 @@
+import * as c from './../actions/ActionTypes';
+
 const initialState = {
   selectedTarget: null,
   selectedTrailId: null,
@@ -6,5 +8,13 @@ const initialState = {
 };
 
 export default (state = initialState, action) => {
-  return state;
+  switch (action.type) {
+    case c.CHANGE_SELECTED_TRAIL:
+      return Object.assign({}, state, {
+        selectedTarget: action.selectedTarget,
+        selectedTrailId: action.selectedTrailId
+      });
+    default:
+      return state;
+  }
 };
