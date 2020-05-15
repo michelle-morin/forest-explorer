@@ -14,6 +14,22 @@ const SideBar = styled.div`
   left: 70%;
 `;
 
+const routeStyle = {
+  color: 'red'
+}
+const featureStyle = {
+  color: '#749774'
+}
+const hoverStyle = {
+  color: '#d4af37'
+}
+const selectedStyle = {
+  color: '#0d120d'
+}
+const popupOptions = {
+  className: 'custom-popup'
+}
+
 class RoutePlanner extends React.Component {
   constructor(props) {
     super(props);
@@ -48,7 +64,8 @@ class RoutePlanner extends React.Component {
   }
 
   deleteRoute() {
-    this.setState({selectedTarget: null, selectedGeoId: null, verifiedRoute: [], distance: 0});
+    (this.state.layersInRoute).map(layer => layer.setStyle(featureStyle));
+    this.setState({selectedTarget: null, selectedGeoId: null, verifiedRoute: [], layersInRoute: [], distance: 0});
   }
 
   showDeleteButton() {
@@ -57,10 +74,6 @@ class RoutePlanner extends React.Component {
 
   render() {
     const { isLoading, trails, error } = this.props;
-
-    const routeStyle = {
-      color: 'red'
-    }
 
     const renderCurrentRoute = () => {
       (this.state.layersInRoute).map(layer => layer.setStyle(routeStyle))
@@ -113,19 +126,6 @@ class RoutePlanner extends React.Component {
     } else if (isLoading) {
       return <React.Fragment>Loading...</React.Fragment>
     } else {
-      const featureStyle = {
-        color: '#749774'
-      }
-      const hoverStyle = {
-        color: '#d4af37'
-      }
-      const selectedStyle = {
-        color: '#0d120d'
-      }
-      const popupOptions = {
-        className: 'custom-popup'
-      }
-  
       const onEachFeature = (feature, layer) => {
         const popupContent = `
           <strong>${feature.properties.Name}</strong><br/>
