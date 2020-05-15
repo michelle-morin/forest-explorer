@@ -36,3 +36,9 @@
 * 11:40am-12:10pm - create different routes using react router and add navigation and splash page components.
 
 * 12:40pm-3pm - researched component libraries, worked on styling, creating styled components, and updating some existing components with react-bootstrap components.
+
+* 3pm-3:45pm - test out different color schemes for route planning component
+
+* 3:45-4:35 - fix color issues for mouseover effects
+
+* 4:35 - starting to plan out splash page, including possibly 3d animations
