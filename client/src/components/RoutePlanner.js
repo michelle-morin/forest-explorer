@@ -49,6 +49,7 @@ class RoutePlanner extends React.Component {
 
   showRouteDetails() {
     if (this.state.verifiedRoute.length > 0) {
+      const roundedDistance = this.state.distance.toFixed(3);
       return (
         <React.Fragment>
         <h3>Current route:</h3>
@@ -57,7 +58,7 @@ class RoutePlanner extends React.Component {
             <li key={segment.trailId}>{segment.name}</li>
           )}
         </ul>
-        <p>{this.state.distance} miles</p>
+        <p>{roundedDistance} miles</p>
         </React.Fragment>
       );
     }
@@ -156,7 +157,7 @@ class RoutePlanner extends React.Component {
 
       return (
         <React.Fragment>
-          <Map className="route-map" center={[45.545, -122.7163]} zoom={15}>
+          <Map className="route-map" center={[45.545, -122.7163]} zoom={14}>
             <TileLayer 
               url="https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png"
               maxZoom={20}
