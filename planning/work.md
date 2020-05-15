@@ -26,3 +26,10 @@
 
 * 4:50pm - current state of the trail exploration page (TrailMap component). This is a static shot; the map is a slippy map with pan/zoom:
 ![trail map](/planning/progress-photo.png)
+
+### Friday, May 15th
+
+* 8:00am-9:30am - refactored RoutePlanner component to dynamically display route details, add trail button, and delete route button. Finished requirements of MVP.
+
+* 9:30am-11:40am - researched various ways to display elevation details for a route, including using [this microservice](https://github.com/perliedman/elevation-service) to populate my existing geojson data with elevation data (did not succeed after several attempts of using this service).
+
