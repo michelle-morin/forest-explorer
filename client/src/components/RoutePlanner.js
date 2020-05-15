@@ -36,7 +36,7 @@ class RoutePlanner extends React.Component {
         <React.Fragment>
         <h3>Current route:</h3>
         <ul>
-          {(this.state.verifiedRoute).map(segment => 
+          {(this.state.verifiedRoute).map(segment =>
             <li key={segment.trailId}>{segment.name}</li>
           )}
         </ul>
