@@ -21,6 +21,7 @@ class RoutePlanner extends React.Component {
       selectedTarget: null,
       selectedGeoId: null,
       verifiedRoute: [],
+      layersInRoute: [],
       distance: 0
     }
   }
@@ -54,44 +55,57 @@ class RoutePlanner extends React.Component {
     return (this.state.verifiedRoute.length > 0) ? <button onClick={() => this.deleteRoute()}>START OVER</button> : null
   }
 
-  // showAddTrailButton() {
-  //   return (this.state.selectedTarget !== null) ? <button onClick={() => handleAddingSegmentToRoute(this.state.selectedGeoId)}>+ ADD TO ROUTE</button> : null
-  // }
-
   render() {
     const { isLoading, trails, error } = this.props;
 
-    const handleAddingSegmentToRoute = (id) => {
-      const currentRoute = this.state.verifiedRoute;
-      const segmentArr = trails.filter(trail => trail.geoObjNumber === id);
+    const routeStyle = {
+      color: 'red'
+    }
+
+    const renderCurrentRoute = () => {
+      (this.state.layersInRoute).map(layer => layer.setStyle(routeStyle))
+    }
+
+    const determineIfSegmentCanBeAdded = (objNum) => {
+      const segmentArr = trails.filter(trail => trail.geoObjNumber === objNum);
       const segment = segmentArr[0];
-      console.log(segment);
-      console.log(this.state.verifiedRoute);
-      if (currentRoute.length === 0) {
-        currentRoute.push(segment);
-        const newDistance = this.state.distance + segment.miles;
-        this.setState({verifiedRoute: currentRoute, distance: newDistance});
-        console.log("added to route!");
-      } else if (currentRoute.length === 1) {
-        const existingSegment = currentRoute[0];
+      if (this.state.verifiedRoute.length === 0) {
+        return true;
+      } else if (this.state.verifiedRoute.length === 1) {
+        const existingSegment = this.state.verifiedRoute[0];
         if ((existingSegment.firstAdjoiningSegment1 === segment.geoObjNumber) || (existingSegment.firstAdjoiningSegment2 === segment.geoObjNumber) || (existingSegment.firstAdjoiningSegment3 === segment.geoObjNumber) || (existingSegment.firstAdjoiningSegment4 === segment.geoObjNumber) || (existingSegment.secondAdjoiningSegment1 === segment.geoObjNumber) || (existingSegment.secondAdjoiningSegment2 === segment.geoObjNumber) || (existingSegment.secondAdjoiningSegment3 === segment.geoObjNumber) || (existingSegment.secondAdjoiningSegment4 === segment.geoObjNumber)) {
-          currentRoute.push(segment);
-          const newDistance = this.state.distance + segment.miles;
-          this.setState({verifiedRoute: currentRoute, distance: newDistance});
+          return true;
         } else {
-          console.log("segment could not be added")
+          return false;
         }
-      } else if (currentRoute.length > 1) {
-        for (let i=0; i< currentRoute.length; i++) {
-          if ((currentRoute[i].firstAdjoiningSegment1 === segment.geoObjNumber) || (currentRoute[i].firstAdjoiningSegment2 === segment.geoObjNumber) || (currentRoute[i].firstAdjoiningSegment3 === segment.geoObjNumber) || (currentRoute[i].firstAdjoiningSegment4 === segment.geoObjNumber) || (currentRoute[i].secondAdjoiningSegment1 === segment.geoObjNumber) || (currentRoute[i].secondAdjoiningSegment2 === segment.geoObjNumber) || (currentRoute[i].secondAdjoiningSegment3 === segment.geoObjNumber) || (currentRoute[i].secondAdjoiningSegment4 === segment.geoObjNumber)) {
-            currentRoute.push(segment);
-            const newDistance = this.state.distance + segment.miles;
-            this.setState({verifiedRoute: currentRoute, distance: newDistance});
-            return;
+      } else {
+        for (let i=0; i< this.state.verifiedRoute.length; i++) {
+          if ((this.state.verifiedRoute[i].firstAdjoiningSegment1 === segment.geoObjNumber) || (this.state.verifiedRoute[i].firstAdjoiningSegment2 === segment.geoObjNumber) || (this.state.verifiedRoute[i].firstAdjoiningSegment3 === segment.geoObjNumber) || (this.state.verifiedRoute[i].firstAdjoiningSegment4 === segment.geoObjNumber) || (this.state.verifiedRoute[i].secondAdjoiningSegment1 === segment.geoObjNumber) || (this.state.verifiedRoute[i].secondAdjoiningSegment2 === segment.geoObjNumber) || (this.state.verifiedRoute[i].secondAdjoiningSegment3 === segment.geoObjNumber) || (this.state.verifiedRoute[i].secondAdjoiningSegment4 === segment.geoObjNumber)) {
+            return true;
           }
         }
-        console.log("could not add segment"); 
+        return false;
       }
+    }
+
+    const handleAddingSegmentToRoute = (objNum, target) => {
+      const segmentArr = trails.filter(trail => trail.geoObjNumber === objNum);
+      const segment = segmentArr[0];
+      const currentRoute = this.state.verifiedRoute;
+      currentRoute.push(segment);
+      const currentLayers = this.state.layersInRoute;
+      currentLayers.push(target);
+      const newDistance = this.state.distance + segment.miles;
+      this.setState({
+        verifiedRoute: currentRoute, 
+        layersInRoute: currentLayers, 
+        distance: newDistance
+      });
+      renderCurrentRoute();
+    }
+
+    const showAddTrailButton = () => {
+      return (this.state.selectedTarget !== null && determineIfSegmentCanBeAdded(this.state.selectedGeoId)) ? <button onClick={() => handleAddingSegmentToRoute(this.state.selectedGeoId, this.state.selectedTarget)}>+ ADD TO ROUTE</button> : null
     }
 
     if (error) {
@@ -150,7 +164,7 @@ class RoutePlanner extends React.Component {
             <GeoJSON id="trailLayer" data={trailData} onEachFeature={onEachFeature} />
           </Map>
           <SideBar width="30%" height="100vh">
-            <button onClick={() => handleAddingSegmentToRoute(this.state.selectedGeoId)}>+ ADD TO ROUTE</button>
+            {showAddTrailButton()}
             {this.showDeleteButton()}
             {this.showRouteDetails()}
           </SideBar>
