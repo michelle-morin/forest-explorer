@@ -14,7 +14,7 @@ const SideBar = styled.div`
   z-index: 10000;
   top: 15vh;
   left: 75vw;
-  background-color: rgb(239,243,239);
+  background-color: rgb(250,250,248);
   border-radius: 10px;
   border: 1px solid  #D5D6DC;
   box-shadow: 0 6px 12px 0 rgba(0,0,0,0.25), 0 6px 12px 0 rgba(0,0,0,0.22);
@@ -27,16 +27,16 @@ const ButtonWrapper = styled.div`
 `;
 
 const routeStyle = {
-  color: 'red'
+  color: 'rgb(204,65,118)'
 }
 const featureStyle = {
-  color: '#749774'
+  color: 'rgb(73,161,105)'
 }
 const hoverStyle = {
-  color: '#d4af37'
+  color: 'rgb(246,189,111)'
 }
 const selectedStyle = {
-  color: '#0d120d'
+  color: 'rgb(117,165,224)'
 }
 const popupOptions = {
   className: 'custom-popup'
@@ -141,10 +141,7 @@ class RoutePlanner extends React.Component {
     } else {
       const onEachFeature = (feature, layer) => {
         const popupContent = `
-          <strong>${feature.properties.Name}</strong><br/>
-          ${feature.properties.Type}<br/>
-          surface: ${feature.properties.Surface}<br/>
-          ${feature.properties.Miles} miles
+          ${feature.properties.Name}
         `;
         layer.setStyle(featureStyle);
         layer.bindPopup(popupContent, popupOptions);
