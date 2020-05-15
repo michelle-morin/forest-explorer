@@ -30,6 +30,34 @@ class RoutePlanner extends React.Component {
     dispatch(getAllTrailsFromApi());
   }
 
+  showRouteDetails() {
+    if (this.state.verifiedRoute.length > 0) {
+      return (
+        <React.Fragment>
+        <h3>Current route:</h3>
+        <ul>
+          {(this.state.verifiedRoute).map(segment => 
+            <li key={segment.trailId}>{segment.name}</li>
+          )}
+        </ul>
+        <p>{this.state.distance} miles</p>
+        </React.Fragment>
+      );
+    }
+  }
+
+  deleteRoute() {
+    this.setState({selectedTarget: null, selectedGeoId: null, verifiedRoute: [], distance: 0});
+  }
+
+  showDeleteButton() {
+    return (this.state.verifiedRoute.length > 0) ? <button onClick={() => this.deleteRoute()}>START OVER</button> : null
+  }
+
+  // showAddTrailButton() {
+  //   return (this.state.selectedTarget !== null) ? <button onClick={() => handleAddingSegmentToRoute(this.state.selectedGeoId)}>+ ADD TO ROUTE</button> : null
+  // }
+
   render() {
     const { isLoading, trails, error } = this.props;
 
@@ -123,6 +151,8 @@ class RoutePlanner extends React.Component {
           </Map>
           <SideBar width="30%" height="100vh">
             <button onClick={() => handleAddingSegmentToRoute(this.state.selectedGeoId)}>+ ADD TO ROUTE</button>
+            {this.showDeleteButton()}
+            {this.showRouteDetails()}
           </SideBar>
         </React.Fragment>
       )
