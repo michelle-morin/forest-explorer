@@ -33,3 +33,4 @@
 
 * 9:30am-11:40am - researched various ways to display elevation details for a route, including using [this microservice](https://github.com/perliedman/elevation-service) to populate my existing geojson data with elevation data (did not succeed after several attempts of using this service).
 
+* 11:40am-12:10pm - create different routes using react router and add navigation and splash page components.
