@@ -29,3 +29,29 @@ code {
   justify-content: center;
   align-items: center;
 }
+
+.navbar {
+  min-height: 100px;
+}
+
+a.navbar-brand {
+  font-size: 2.5rem;
+  color: rgba(0,0,0,.5) !important;
+  padding: 0 15px;
+  height: 100px;
+  line-height: 100px !important;
+  -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+
+.navbar-toggle {
+  margin-top: 23px;
+  padding: 9px 10px !important;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    padding-top: 26.5px;
+    padding-bottom: 26.5px;
+    line-height: 27px;
+  }
+}

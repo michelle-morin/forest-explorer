@@ -1,8 +1,9 @@
 import React from 'react';
+import styled from 'styled-components';
 
 function Splash() {
   return (
-    <h1>splash page</h1>
+    <h1>splash</h1>
   );
 }
 

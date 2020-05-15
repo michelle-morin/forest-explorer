@@ -12,12 +12,12 @@ const SideBar = styled.div`
   height: ${props => props.height};
   position: absolute;
   z-index: 10000;
-  top: 10vh;
+  top: 15vh;
   left: 75vw;
-  background-color: rgb(230,230,230);
+  background-color: rgb(239,243,239);
   border-radius: 10px;
   border: 1px solid  #D5D6DC;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 6px 12px 0 rgba(0,0,0,0.25), 0 6px 12px 0 rgba(0,0,0,0.22);
   padding: 3%;
 `;
 
