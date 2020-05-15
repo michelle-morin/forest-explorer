@@ -1,11 +1,26 @@
 import React from 'react';
-// import TrailMap from './TrailMap';
+import TrailMap from './TrailMap';
 import RoutePlanner from './RoutePlanner';
+import NavBar from './NavBar';
+import Splash from './Splash';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
-    // <TrailMap />
-    <RoutePlanner/>
+    <BrowserRouter>
+      <NavBar />
+      <Switch>
+        <Route path="/explore">
+          <TrailMap />
+        </Route>
+        <Route path="/plan">
+          <RoutePlanner />
+        </Route>
+        <Route path="/">
+          <Splash />
+        </Route>
+      </Switch>
+    </BrowserRouter>
   );
 }
 
