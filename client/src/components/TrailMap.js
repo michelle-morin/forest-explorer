@@ -13,13 +13,13 @@ class TrailMap extends React.Component {
 
   render() {
     const featureStyle = {
-      color: '#749774'
+      color: 'rgb(73,161,105)'
     }
     const hoverStyle = {
-      color: '#d4af37'
+      color: 'rgb(246,189,111)'
     }
     const selectedStyle = {
-      color: '#0d120d'
+      color: 'rgb(204,65,118)'
     }
     const popupOptions = {
       className: 'custom-popup'
@@ -36,7 +36,9 @@ class TrailMap extends React.Component {
       layer.bindPopup(popupContent, popupOptions);
       layer.on({
         'mouseover': (event) => {
-          layer.setStyle(hoverStyle);
+          if (layer !== this.state.selectedTarget) {
+            layer.setStyle(hoverStyle);
+          }
         },
         'click': (event) => {
           if (this.state.selectedTarget !== null) {

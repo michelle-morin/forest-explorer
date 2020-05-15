@@ -147,7 +147,9 @@ class RoutePlanner extends React.Component {
         layer.bindPopup(popupContent, popupOptions);
         layer.on({
           'mouseover': (event) => {
-            layer.setStyle(hoverStyle);
+            if (layer !== this.state.selectedTarget) {
+              layer.setStyle(hoverStyle);
+            }
           },
           'click': (event) => {
             if (this.state.selectedTarget !== null) {
