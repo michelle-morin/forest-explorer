@@ -4,14 +4,26 @@ import { getAllTrailsFromApi } from './../actions';
 import { Map, TileLayer, GeoJSON } from 'react-leaflet';
 import { trailData } from '../data/data.js';
 import styled from 'styled-components';
+import { Button } from 'react-bootstrap';
 import '../index.css';
 
 const SideBar = styled.div`
   width: ${props => props.width};
   height: ${props => props.height};
   position: absolute;
-  top: 0;
-  left: 70%;
+  z-index: 10000;
+  top: 10vh;
+  left: 75vw;
+  background-color: rgb(230,230,230);
+  border-radius: 10px;
+  border: 1px solid  #D5D6DC;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  padding: 3%;
+`;
+
+const ButtonWrapper = styled.div`
+  display: flex;
+  justify-content: space-around;
 `;
 
 const routeStyle = {
@@ -70,7 +82,7 @@ class RoutePlanner extends React.Component {
   }
 
   showDeleteButton() {
-    return (this.state.verifiedRoute.length > 0) ? <button onClick={() => this.deleteRoute()}>START OVER</button> : null
+    return (this.state.verifiedRoute.length > 0) ? <Button variant="outline-dark" onClick={() => this.deleteRoute()}>DELETE ROUTE</Button> : null
   }
 
   render() {
@@ -119,7 +131,7 @@ class RoutePlanner extends React.Component {
     }
 
     const showAddTrailButton = () => {
-      return (this.state.selectedTarget !== null && determineIfSegmentCanBeAdded(this.state.selectedGeoId)) ? <button onClick={() => handleAddingSegmentToRoute(this.state.selectedGeoId, this.state.selectedTarget)}>+ ADD TO ROUTE</button> : null
+      return (this.state.selectedTarget !== null && determineIfSegmentCanBeAdded(this.state.selectedGeoId)) ? <Button variant="outline-dark" onClick={() => handleAddingSegmentToRoute(this.state.selectedGeoId, this.state.selectedTarget)}>+ ADD TO ROUTE</Button> : null
     }
 
     if (error) {
@@ -157,16 +169,18 @@ class RoutePlanner extends React.Component {
 
       return (
         <React.Fragment>
-          <Map className="route-map" center={[45.545, -122.7163]} zoom={14}>
+          <Map center={[45.545, -122.7163]} zoom={14}>
             <TileLayer 
               url="https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png"
               maxZoom={20}
             />
             <GeoJSON id="trailLayer" data={trailData} onEachFeature={onEachFeature} />
           </Map>
-          <SideBar width="30%" height="100vh">
-            {showAddTrailButton()}
-            {this.showDeleteButton()}
+          <SideBar width="20vw" height="70vh">
+            <ButtonWrapper>
+              {showAddTrailButton()}
+              {this.showDeleteButton()}
+            </ButtonWrapper>
             {this.showRouteDetails()}
           </SideBar>
         </React.Fragment>
