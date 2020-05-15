@@ -86,20 +86,33 @@ _To view/edit the source code of this application, open the contents of the fore
 
 ## Technologies Used
 
-* C#
-* .NET Core webapi v2.2
-* dotnet script v0.50.1
-* MySQL v8.0.15
-* Entity Framework Core v2.2
-* RestSharp version v106.6.10
-* Newtonsoft.Json version v12.0.2
-* npm
-* JavaScript
-* React
-* Jest
-* Leaflet.js, Leaflet-React
-* Styled components
-* CSS
+<details open>
+<summary>Backend:</summary>
+<ul>
+  <li>C#</li>
+  <li>.NET Core v2.2</li>
+  <li>dotnet script v0.50.1</li>
+  <li>MySQL v8.0.15</li>
+  <li>Entity Framework Core v2.2</li>
+</ul>
+</details>
+
+<details open>
+<summary>Frontend:</summary>
+<ul>
+  <li>npm</li>
+  <li>JavaScript</li>
+  <li>JSX</li>
+  <li>React</li>
+  <li>Jest</li>
+  <li>Leaflet.js</li>
+  <li>Leaflet-React</li>
+  <li>React-router</li>
+  <li>Styled components</li>
+  <li>HTML</li>
+  <li>CSS</li>
+</ul>
+</details>
 
 ## License
 
