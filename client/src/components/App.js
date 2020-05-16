@@ -3,6 +3,7 @@ import TrailMap from './TrailMap';
 import RoutePlanner from './RoutePlanner';
 import NavBar from './NavBar';
 import Splash from './Splash';
+import AboutPage from './AboutPage';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -15,6 +16,9 @@ function App() {
         </Route>
         <Route path="/plan">
           <RoutePlanner />
+        </Route>
+        <Route path="/about">
+          <AboutPage />
         </Route>
         <Route path="/">
           <Splash />

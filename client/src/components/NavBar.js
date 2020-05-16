@@ -12,6 +12,7 @@ function NavBar() {
           <Nav className="ml-auto">
             <Nav.Link as={Link} to="/explore">Explore</Nav.Link>
             <Nav.Link as={Link} to="/plan">Plan</Nav.Link>
+            <Nav.Link as={Link} to="/about">About</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
