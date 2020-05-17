@@ -41,4 +41,8 @@
 
 * 3:45-4:35 - fix color issues for mouseover effects
 
-* 4:35 - starting to plan out splash page, including possibly 3d animations
+* 4:35-5:15pm - starting to plan out splash page, including possibly 3d animations
+
+### Saturday, May 16th
+
+* 5:30pm-7:15pm - created assets for splash page in photoshop

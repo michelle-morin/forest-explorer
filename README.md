@@ -111,6 +111,7 @@ _To view/edit the source code of this application, open the contents of the fore
   <li>Styled components</li>
   <li>HTML</li>
   <li>CSS</li>
+  <li>Adobe Photoshop</li>
 </ul>
 </details>
 
