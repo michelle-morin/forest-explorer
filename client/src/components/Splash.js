@@ -35,32 +35,32 @@ function Splash() {
   const treeOneStyle = {
     position: 'absolute',
     left: '0vw',
-    top: '40vh',
-    transform: 'scale(.5)'
+    top: '30vh',
+    transform: 'scale(.75)'
   }
   const treeTwoStyle = {
     position: 'absolute',
     left: '25vw',
-    top: '15vh',
-    transform: 'scale(.5)'
+    top: '13vh',
+    transform: 'scale(.55)'
   }
   const treeThreeStyle = {
     position: 'absolute',
     left: '85vw',
-    top: '-5vh',
-    transform: 'scale(.5)'
+    top: '-15vh',
+    transform: 'scale(.35)'
   }
   const treeFourStyle = {
     position: 'absolute',
     left: '50vw',
-    top: '10vh',
-    transform: 'scale(.5)'
+    top: '7vh',
+    transform: 'scale(.45)'
   }
   const treeFiveStyle = {
     position: 'absolute',
     left: '60vw',
-    top: '-22vh',
-    transform: 'scale(.5)'
+    top: '-18vh',
+    transform: 'scale(.4)'
   }
 
   return (
