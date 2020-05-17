@@ -6,12 +6,14 @@
 
 ## Description
 
-This application will allow users to familiarize themselves with trails in Forest Park, the network of trails along Portland’s northwest urban boundary, and generate running/hiking routes.
+This application allows users to familiarize themselves with trails in Forest Park, the network of trails along Portland’s northwest urban boundary. Users are able to learn about each trail as well as generate running/hiking routes.
 
 ## Specification user stories:
-* A user should be directed to a splash page displaying a map of Forest Park. The map should include geojson features representing each trail segment in Forest Park.
-* On the splash page, a user should be able to click any trail segment in forest park to learn about the trail (name, distance in miles, type of trail, and surface type).
-* A should be able to navigate to a Routes page, where they can dynamically add and remove trail segments from a running/hiking route.
+* A user should be able to navigate to a trail exploration page displaying a map of Forest Park. The map should include geojson features representing each trail segment in Forest Park.
+* A user should be able to click any trail segment in forest park to learn about the trail (name, distance in miles, type of trail, and surface type).
+* A user should be able to navigate to a route planning page, where the user can dynamically add trail segments to a running/hiking route.
+* A user should be able to delete a running/hiking route.
+* A user should be able to view which trails are currently in their running/hiking route based on color change of geojson features on the map.
 
 ## Component Tree
 ![component tree](/planning/component-tree.jpg)
@@ -21,12 +23,12 @@ This application will allow users to familiarize themselves with trails in Fores
 ### Install .NET Core
 
 #### on macOS:
-* _[Click here](https://dotnet.microsoft.com/download/thank-you/dotnet-sdk-2.2.106-macos-x64-installer) to download a .NET Core SDK from Microsoft Corp._
-* _Open the file (this will launch an installer which will walk you through installation steps. Use the default settings the installer suggests.)_
+* [Click here](https://dotnet.microsoft.com/download/thank-you/dotnet-sdk-2.2.106-macos-x64-installer) to download a .NET Core SDK from Microsoft Corp.
+* Open the file (this will launch an installer which will walk you through installation steps. Use the default settings the installer suggests.)
 
 #### on Windows:
-* _[Click here](https://dotnet.microsoft.com/download/thank-you/dotnet-sdk-2.2.203-windows-x64-installer) to download the 64-bit .NET Core SDK from Microsoft Corp._
-* _Open the .exe file and follow the steps provided by the installer for your OS._
+* [Click here](https://dotnet.microsoft.com/download/thank-you/dotnet-sdk-2.2.203-windows-x64-installer) to download the 64-bit .NET Core SDK from Microsoft Corp.
+* Open the .exe file and follow the steps provided by the installer for your OS.
 
 #### Install dotnet script
 * Enter the command ``dotnet tool install -g dotnet-script`` in Terminal (macOS) or PowerShell (Windows).
@@ -34,17 +36,17 @@ This application will allow users to familiarize themselves with trails in Fores
 ### Install MySQL and MySQL Workbench
 
 #### on macOS:
-_Download the MySQL Community Server DMG File [here](https://dev.mysql.com/downloads/file/?id=484914). Follow along with the installer until you reach the configuration page. Once you've reached Configuration, set the following options (or user default if not specified):_
+Download the MySQL Community Server DMG File [here](https://dev.mysql.com/downloads/file/?id=484914). Follow along with the installer until you reach the configuration page. Once you've reached Configuration, set the following options (or user default if not specified):
 * use legacy password encryption
 * set password (and change the password field in appsettings.json file of this repository to match your password)
 * click finish
 * open Terminal and enter the command ``echo 'export PATH="/usr/local/mysql/bin:$PATH"' >> ~/.bash_profile`` if using Git Bash.
 * Verify MySQL installation by opening Terminal and entering the command ``mysql -uroot -p{your password here, omitted brackets}``. If you gain access to the MySQL command line, installation is complete. An error (e.g., -bash: mysql: command not found) indicates something went wrong.
 
-_Download MySQL Workbench DMG file [here](https://dev.mysql.com/downloads/file/?id=484391). Install MySQL Workbench to Applications folder. Open MySQL Workbench and select Local instance 3306 server, then enter the password you set. If it connects, you're all set._
+Download MySQL Workbench DMG file [here](https://dev.mysql.com/downloads/file/?id=484391). Install MySQL Workbench to Applications folder. Open MySQL Workbench and select Local instance 3306 server, then enter the password you set. If it connects, you're all set.
 
 #### on Windows:
-_Download the MySQL Web Installer [here](https://dev.mysql.com/downloads/file/?id=484919) and follow along with the installer. Click "Yes" if prompted to update, and accept license terms._
+Download the MySQL Web Installer [here](https://dev.mysql.com/downloads/file/?id=484919) and follow along with the installer. Click "Yes" if prompted to update, and accept license terms.
 * Choose Custom setup type
 * When prompted to Select Products and Features, choose the following: MySQL Server (Will be under MySQL Servers) and MySQL Workbench (Will be under Applications)
 * Select Next, then Execute. Wait for download and installation (can take a few minutes)
@@ -56,7 +58,7 @@ _Download the MySQL Web Installer [here](https://dev.mysql.com/downloads/file/?i
   - Unselect Configure MySQL Server as a Windows Service.
 * Complete installation process
 
-_Add the MySQL environment variable to the System PATH. Instructions for Windows 10:_
+Add the MySQL environment variable to the System PATH. Instructions for Windows 10:
 * Open the Control Panel and visit _System > Advanced System Settings > Environment Variables..._
 * Select _PATH..._, click _Edit..._, then _Add_.
 * Add the exact location of your MySQL installation and click _OK_. (This location is likely C:\Program Files\MySQL\MySQL Server 8.0\bin, but may differ depending on your specific installation.)
@@ -65,24 +67,24 @@ _Add the MySQL environment variable to the System PATH. Instructions for Windows
 
 ### Clone this repository
 
-_Enter the following commands in Terminal (macOS) or PowerShell (Windows):_
+Enter the following commands in Terminal (macOS) or PowerShell (Windows):
 * ``cd desktop``
 * ``git clone https://github.com/michelle-morin/forest-park-trails``
 * ``cd forest-park-trails``
 
-_Next, run the TrailsLookup web API backend by entering the following commands in Terminal (macOS) or PowerShell (Windows):_
+To view/edit the source code of this application, open the contents of the forest-park-trails directory in a text editor or IDE of your choice. To open all contents of the ``forest-park-trails`` directory in Visual Studio Code on macOS, enter the command ``code .`` in Terminal (macOS) or PowerShell (Windows).
+
+Next, run the TrailsLookup web API backend by entering the following commands in Terminal (macOS) or PowerShell (Windows):
 * ``cd TrailsLookup``
 * ``dotnet restore``
 * ``dotnet build``
 * ``dotnet ef database update``
 * ``dotnet watch run``
 
-_In a separate Terminal or PowerShell, enter the following commands to run the React client front-end:_
-* ``cd ../client``
+In a separate Terminal or PowerShell window, enter the following commands at the root of the ``forest-park-trails`` directory to run the React client front-end:
+* ``cd client``
 * ``npm install``
 * ``npm start``
-
-_To view/edit the source code of this application, open the contents of the forest-park-trails directory in a text editor or IDE of your choice (e.g., to open all contents of the directory in Visual Studio Code on macOS, enter the command_ ``code .`` _in Terminal at the root of the forest-park-trails directory)._
 
 ## Technologies Used
 
@@ -111,7 +113,7 @@ _To view/edit the source code of this application, open the contents of the fore
 * CSS
 * Adobe Photoshop
 
-## License
+## Copyright Notice
 
 &copy; 2020 - Michelle Morin.  
 Under exclusive copyright. All rights reserved.
