@@ -6,7 +6,7 @@ function NavBar() {
 
   return (
     <header>
-      <Navbar collapseOnSelect expand="lg" className="custom-nav">
+      <Navbar collapseOnSelect expand="lg" className="custom-nav" bg="light" variant="light">
         <Navbar.Brand as={Link} to="/">Forest Explorer</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
