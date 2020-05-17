@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { getAllTrailsFromApi } from './../actions';
+import { getAllTrailsFromApi } from '../actions';
 import { Map, TileLayer, GeoJSON } from 'react-leaflet';
 import { trailData } from '../data/data.js';
 import styled from 'styled-components';
@@ -42,7 +42,7 @@ const popupOptions = {
   className: 'custom-popup'
 }
 
-class RoutePlanner extends React.Component {
+class RouteBuilder extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -196,4 +196,4 @@ const mapStateToProps = state => {
   }
 }
 
-export default connect(mapStateToProps)(RoutePlanner);
+export default connect(mapStateToProps)(RouteBuilder);
