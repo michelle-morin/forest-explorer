@@ -112,6 +112,7 @@ In a separate Terminal or PowerShell window, enter the following commands at the
 * HTML
 * CSS
 * Adobe Photoshop
+* Stamen MapStack (to generate the custom tile layer for each map)
 
 ## Copyright Notice
 
