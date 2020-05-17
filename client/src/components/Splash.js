@@ -1,6 +1,7 @@
 import React from 'react';
 import path from './../assets/img/path.png';
 import tree from './../assets/img/tree.png';
+import { Link } from 'react-router-dom';
 
 function Splash() {
   const backgroundStyles = {
@@ -15,9 +16,21 @@ function Splash() {
   const brandStyles = {
     position: 'absolute',
     fontFamily: 'Architectural',
-    left: '15vw',
+    left: '12vw',
     top: '15vh',
-    fontSize: '5rem'
+    fontSize: '7rem',
+    color: '#111111'
+  }
+  const linkBoxStyles = {
+    position: 'absolute',
+    fontFamily: 'Architectural',
+    left: '12vw',
+    top: '28vh',
+    fontSize: '3rem'
+  }
+  const linkStyle = {
+    color: '#111111',
+    marginRight: '20%'
   }
   const treeOneStyle = {
     position: 'absolute',
@@ -27,7 +40,7 @@ function Splash() {
   }
   const treeTwoStyle = {
     position: 'absolute',
-    left: '20vw',
+    left: '25vw',
     top: '15vh',
     transform: 'scale(.5)'
   }
@@ -54,6 +67,11 @@ function Splash() {
     <React.Fragment>
       <img src={path} style={backgroundStyles} alt="running path" />
       <h1 style={brandStyles}>Forest Explorer</h1>
+      <div style={linkBoxStyles}>
+        <Link to="/explore" style={linkStyle}>Explore</Link>
+        <Link to="/plan" style={linkStyle}>Plan</Link>
+        <Link to="/about" style={linkStyle}>About</Link>
+      </div>
       <img src={tree} style={treeOneStyle} alt="watercolor tree" />
       <img src={tree} style={treeTwoStyle} alt="watercolor tree" />
       <img src={tree} style={treeThreeStyle} alt="watercolor tree" />
