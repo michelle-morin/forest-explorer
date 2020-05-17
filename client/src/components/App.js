@@ -1,7 +1,6 @@
 import React from 'react';
-import TrailMap from './TrailMap';
-import RoutePlanner from './RoutePlanner';
-import NavBar from './NavBar';
+import Explore from './Explore';
+import Planner from './Planner';
 import Splash from './Splash';
 import AboutPage from './AboutPage';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
@@ -9,13 +8,12 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 function App() {
   return (
     <BrowserRouter>
-      <NavBar />
       <Switch>
         <Route path="/explore">
-          <TrailMap />
+          <Explore />
         </Route>
         <Route path="/plan">
-          <RoutePlanner />
+          <Planner />
         </Route>
         <Route path="/about">
           <AboutPage />
