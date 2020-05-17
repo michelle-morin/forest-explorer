@@ -1,6 +1,7 @@
 import React from 'react';
 import { Map, TileLayer, GeoJSON } from 'react-leaflet';
 import { trailData } from '../data/trails.js';
+import { trailheads } from '../data/trailheads.js';
 import '../index.css';
 
 class TrailMap extends React.Component {
@@ -25,7 +26,7 @@ class TrailMap extends React.Component {
       className: 'custom-popup'
     }
 
-    const onEachFeature = (feature, layer) => {
+    const onEachTrailFeature = (feature, layer) => {
       const popupContent = `
         <strong>${feature.properties.Name}</strong><br/>
         ${feature.properties.Type}<br/>
@@ -54,6 +55,15 @@ class TrailMap extends React.Component {
         }
       });
     };
+
+    const onEachTrailheadFeature = (feature, layer) => {
+      const popupTrailheadContent = `
+        <strong>${feature.properties.Name}</strong><br/>
+        ${feature.properties.Type}<br/>
+        ${feature.properties.Description}<br/>
+      `;
+      layer.bindPopup(popupTrailheadContent, popupOptions);
+    };
     
     return (
       <Map center={[45.545, -122.7163]} zoom={14}>
@@ -61,7 +71,8 @@ class TrailMap extends React.Component {
           url="https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png"
           maxZoom={20}
         />
-        <GeoJSON id="trailLayer" data={trailData} onEachFeature={onEachFeature} />
+        <GeoJSON id="trailLayer" data={trailData} onEachFeature={onEachTrailFeature} />
+        <GeoJSON id="trailheadLayer" data={trailheads} onEachFeature={onEachTrailheadFeature} />
       </Map>
     );
   }

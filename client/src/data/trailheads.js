@@ -227,7 +227,7 @@ export const trailheads = [
         "GeoObjNumber": 14,
         "Name": "Aspen Trailhead",
         "Type": "Trailhead",
-        "Surface": "This trailhead provides access to the Aspen Trail, which is only open to pedestrians. Aspen Trail connects to Wildwood Trail in .23 miles."
+        "Description": "This trailhead provides access to the Aspen Trail, which is only open to pedestrians. Aspen Trail connects to Wildwood Trail in .23 miles."
     },
     "geometry": {
         "type": "Point",
@@ -244,7 +244,7 @@ export const trailheads = [
         "GeoObjNumber": 15,
         "Name": "Lower Macleay Park Entrance",
         "Type": "Trailhead",
-        "Surface": "Provides access to the Lower Macleay Trail, which is only open to pedestrian use. This trail parallels Balch Creek, one of Forest Park's few year-round streams, which supports a resident population of cutthroat trout. Lower Macleay Trail intersects Wildwood Trail in .84 mile, at the location of the Stone House, a remnant rest station from the WPA. On-street parking is available throughout the surrounding neighborhood."
+        "Description": "Provides access to the Lower Macleay Trail, which is only open to pedestrian use. This trail parallels Balch Creek, one of Forest Park's few year-round streams, which supports a resident population of cutthroat trout. Lower Macleay Trail intersects Wildwood Trail in .84 mile, at the location of the Stone House, a remnant rest station from the WPA. On-street parking is available throughout the surrounding neighborhood."
     },
     "geometry": {
         "type": "Point",
@@ -261,7 +261,7 @@ export const trailheads = [
         "GeoObjNumber": 16,
         "Name": "Holman Lane Entrance",
         "Type": "Trailhead",
-        "Surface": "Provides access the lower end of Holman Lane, which is open to pedestrians and bicycles (riding uphill only). There is a maintained meadow near the trailhead, a unique feature in Forest Park."
+        "Description": "Provides access the lower end of Holman Lane, which is open to pedestrians and bicycles (riding uphill only). There is a maintained meadow near the trailhead, a unique feature in Forest Park."
     },
     "geometry": {
         "type": "Point",
@@ -278,7 +278,7 @@ export const trailheads = [
         "GeoObjNumber": 17,
         "Name": "Tunnel & Cumberland Trails Entrance",
         "Type": "Trailhead",
-        "Surface": "Trailhead access for the Tunnel and Cumberland trails, both of which are only open to pedestrian use. Limited off-street parking available."
+        "Description": "Trailhead access for the Tunnel and Cumberland trails, both of which are only open to pedestrian use. Limited off-street parking available."
     },
     "geometry": {
         "type": "Point",
@@ -295,7 +295,7 @@ export const trailheads = [
         "GeoObjNumber": 18,
         "Name": "Upper Macleay Park Entrance",
         "Type": "Trailhead",
-        "Surface": "Trailhead access to Wildwood Trail, which is only open to pedestrian use. Parking is only available on the north side of the road. You can travel in either direction on the Wildwood - north (dropping into Balch Creek) or south (cross NW Cornell and begin the steep climb to Pittock Mansion)."
+        "Description": "Trailhead access to Wildwood Trail, which is only open to pedestrian use. Parking is only available on the north side of the road. You can travel in either direction on the Wildwood - north (dropping into Balch Creek) or south (cross NW Cornell and begin the steep climb to Pittock Mansion)."
     },
     "geometry": {
         "type": "Point",
@@ -312,7 +312,7 @@ export const trailheads = [
         "GeoObjNumber": 19,
         "Name": "Pittock Mansion site",
         "Type": "Trailhead",
-        "Surface": "Access to Wildwood Trail heading north and south from Pittock Mansion. Wildwood trail quickly loses elevation in both directions."
+        "Description": "Access to Wildwood Trail heading north and south from Pittock Mansion. Wildwood trail quickly loses elevation in both directions."
     },
     "geometry": {
         "type": "Point",
