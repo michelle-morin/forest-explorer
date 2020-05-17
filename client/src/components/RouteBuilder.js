@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { getAllTrailsFromApi } from '../actions';
 import { Map, TileLayer, GeoJSON } from 'react-leaflet';
-import { trailData } from '../data/data.js';
+import { trailData } from '../data/trails.js';
 import styled from 'styled-components';
 import { Button } from 'react-bootstrap';
 import '../index.css';
