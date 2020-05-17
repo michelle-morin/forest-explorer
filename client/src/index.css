@@ -30,6 +30,10 @@ code {
   align-items: center;
 }
 
+.custom-nav {
+  background-color: rgb(73,161,105);
+}
+
 .navbar {
   min-height: 100px;
 }
