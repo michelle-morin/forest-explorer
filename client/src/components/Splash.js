@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import path from './../assets/path.png';
 
 const SplashWrapper = styled.div`
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   background-image: url(${path});
   background-position: center;
