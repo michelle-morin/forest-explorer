@@ -86,34 +86,30 @@ _To view/edit the source code of this application, open the contents of the fore
 
 ## Technologies Used
 
-<details open>
-<summary>Backend:</summary>
-<ul>
-  <li>C#</li>
-  <li>.NET Core v2.2</li>
-  <li>dotnet script v0.50.1</li>
-  <li>MySQL v8.0.15</li>
-  <li>Entity Framework Core v2.2</li>
-</ul>
-</details>
+### Backend:
+* C#
+* .NET Core v2.2
+* dotnet script v0.50.1
+* MySQL v8.0.15
+* Entity Framework Core v2.2
 
-<details open>
-<summary>Frontend:</summary>
-<ul>
-  <li>npm</li>
-  <li>JavaScript</li>
-  <li>JSX</li>
-  <li>React</li>
-  <li>Jest</li>
-  <li>Leaflet.js</li>
-  <li>Leaflet-React</li>
-  <li>React-router</li>
-  <li>Styled components</li>
-  <li>HTML</li>
-  <li>CSS</li>
-  <li>Adobe Photoshop</li>
-</ul>
-</details>
+### Frontend:
+* Test Driven Development
+* JavaScript (ES6)
+* React
+* JSX
+* Jest
+* Redux
+* React-Redux Bindings
+* npm
+* React-Router
+* Leaflet.js
+* [React-Leaflet](https://react-leaflet.js.org/)
+* [Styled Components](https://styled-components.com/)
+* [React-Typist](https://github.com/jstejada/react-typist)
+* HTML
+* CSS
+* Adobe Photoshop
 
 ## License
 
