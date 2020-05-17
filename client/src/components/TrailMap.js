@@ -1,8 +1,23 @@
 import React from 'react';
+import L from 'leaflet';
 import { Map, TileLayer, GeoJSON } from 'react-leaflet';
 import { trailData } from '../data/trails.js';
 import { trailheads } from '../data/trailheads.js';
+import tree from './../assets/img/tree.png';
 import '../index.css';
+
+delete L.Icon.Default.prototype._getIconUrl;
+
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
+  iconUrl: require('leaflet/dist/images/marker-icon.png'),
+  shadowUrl: require('leaflet/dist/images/marker-shadow.png')
+});
+
+const treeIcon = new L.Icon({
+  iconUrl: tree,
+  iconSize: [20, 30]
+});
 
 class TrailMap extends React.Component {
   constructor(props) {
@@ -28,10 +43,10 @@ class TrailMap extends React.Component {
 
     const onEachTrailFeature = (feature, layer) => {
       const popupContent = `
-        <strong>${feature.properties.Name}</strong><br/>
+        <center><strong>${feature.properties.Name}</strong><br/>
         ${feature.properties.Type}<br/>
         surface: ${feature.properties.Surface}<br/>
-        ${feature.properties.Miles} miles
+        ${feature.properties.Miles} miles</center>
       `;
       layer.setStyle(featureStyle);
       layer.bindPopup(popupContent, popupOptions);
@@ -58,11 +73,17 @@ class TrailMap extends React.Component {
 
     const onEachTrailheadFeature = (feature, layer) => {
       const popupTrailheadContent = `
-        <strong>${feature.properties.Name}</strong><br/>
+        <center><strong>${feature.properties.Name}</strong><br/>
         ${feature.properties.Type}<br/>
-        ${feature.properties.Description}<br/>
+        ${feature.properties.Description}</center>
       `;
       layer.bindPopup(popupTrailheadContent, popupOptions);
+    };
+
+    const pointToLayer = (feature, latlng) => {
+      return L.marker(latlng, {
+        icon: treeIcon
+      });
     };
     
     return (
@@ -72,7 +93,7 @@ class TrailMap extends React.Component {
           maxZoom={20}
         />
         <GeoJSON id="trailLayer" data={trailData} onEachFeature={onEachTrailFeature} />
-        <GeoJSON id="trailheadLayer" data={trailheads} onEachFeature={onEachTrailheadFeature} />
+        <GeoJSON id="trailheadLayer" data={trailheads} pointToLayer={pointToLayer} onEachFeature={onEachTrailheadFeature} />
       </Map>
     );
   }
