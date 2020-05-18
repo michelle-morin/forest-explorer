@@ -168,10 +168,10 @@ class RouteBuilder extends React.Component {
 
       return (
         <React.Fragment>
-          <Map center={[45.545, -122.7163]} zoom={14}>
+          <Map center={[45.57, -122.7163]} zoom={13} zoomControl={false}>
             <TileLayer 
-              url="https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png"
-              maxZoom={20}
+              url="http://a.sm.mapstack.stamen.com/(terrain-background,(watercolor,$fff[@10])[@70],(positron,$fff[@10])[@50])/{z}/{x}/{y}.png"
+              maxZoom={19}
             />
             <GeoJSON id="trailLayer" data={trailData} onEachFeature={onEachFeature} />
           </Map>
