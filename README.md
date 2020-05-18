@@ -112,7 +112,7 @@ In a separate Terminal or PowerShell window, enter the following commands at the
 * HTML
 * CSS
 * Adobe Photoshop
-* Stamen MapStack (to generate the custom tile layer for each map)
+* Stamen MapStack (to generate the custom tile layer for each map, which is a stack of Stamen terrain, Stamen watercolor, and CartoDB Positron map tiles)
 
 ## Copyright Notice
 
