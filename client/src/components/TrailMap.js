@@ -87,11 +87,8 @@ class TrailMap extends React.Component {
     };
     
     return (
-      <Map className="explore-map" center={[45.57, -122.7163]} zoom={13}>
+      <Map center={[45.57, -122.7163]} zoomControl={false} zoom={13}>
         <TileLayer 
-          // url="https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png"
-          // url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}.png"
-          // url="http://d.sm.mapstack.stamen.com/(terrain-background,watercolor[@60])/{z}/{x}/{y}.png"
           url="http://a.sm.mapstack.stamen.com/(terrain-background,(watercolor,$fff[@10])[@70],(positron,$fff[@10])[@50])/{z}/{x}/{y}.png"
           maxZoom={19}
         />
