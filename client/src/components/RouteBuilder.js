@@ -13,8 +13,8 @@ const SideBar = styled.div`
   position: absolute;
   z-index: 10000;
   top: 15vh;
-  left: 75vw;
-  background-color: rgb(250,250,248);
+  left: 70vw;
+  background-color: rgb(244,240,232, .7);
   border-radius: 10px;
   border: 1px solid  #D5D6DC;
   box-shadow: 0 6px 12px 0 rgba(0,0,0,0.25), 0 6px 12px 0 rgba(0,0,0,0.22);
@@ -23,7 +23,7 @@ const SideBar = styled.div`
 
 const ButtonWrapper = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 `;
 
 const routeStyle = {
@@ -36,7 +36,7 @@ const hoverStyle = {
   color: 'rgb(246,189,111)'
 }
 const selectedStyle = {
-  color: 'rgb(117,165,224)'
+  color: 'rgb(204,65,118)'
 }
 const popupOptions = {
   className: 'custom-popup'
@@ -64,13 +64,12 @@ class RouteBuilder extends React.Component {
       const roundedDistance = this.state.distance.toFixed(3);
       return (
         <React.Fragment>
-        <h3>Current route:</h3>
-        <ul>
+        {/* <ul>
           {(this.state.verifiedRoute).map(segment =>
             <li key={segment.trailId}>{segment.name}</li>
           )}
-        </ul>
-        <p>{roundedDistance} miles</p>
+        </ul> */}
+        <p class="trail-details"><span class="trails-header">Distance: </span>{roundedDistance} miles</p>
         </React.Fragment>
       );
     }
@@ -82,7 +81,7 @@ class RouteBuilder extends React.Component {
   }
 
   showDeleteButton() {
-    return (this.state.verifiedRoute.length > 0) ? <Button variant="outline-dark" onClick={() => this.deleteRoute()}>DELETE ROUTE</Button> : null
+    return (this.state.verifiedRoute.length > 0) ? <Button variant="outline-dark" onClick={() => this.deleteRoute()}>DELETE ROUTE</Button> : <Button variant="outline-dark" disabled="true">DELETE ROUTE</Button>
   }
 
   render() {
@@ -131,7 +130,7 @@ class RouteBuilder extends React.Component {
     }
 
     const showAddTrailButton = () => {
-      return (this.state.selectedTarget !== null && determineIfSegmentCanBeAdded(this.state.selectedGeoId)) ? <Button variant="outline-dark" onClick={() => handleAddingSegmentToRoute(this.state.selectedGeoId, this.state.selectedTarget)}>+ ADD TO ROUTE</Button> : null
+      return (this.state.selectedTarget !== null && determineIfSegmentCanBeAdded(this.state.selectedGeoId)) ? <Button variant="outline-dark" onClick={() => handleAddingSegmentToRoute(this.state.selectedGeoId, this.state.selectedTarget)}>+ ADD TO ROUTE</Button> : <Button variant="outline-dark" disabled="true">+ ADD TO ROUTE</Button>
     }
 
     if (error) {
@@ -175,7 +174,8 @@ class RouteBuilder extends React.Component {
             />
             <GeoJSON id="trailLayer" data={trailData} onEachFeature={onEachFeature} />
           </Map>
-          <SideBar width="20vw" height="70vh">
+          <SideBar width="25vw" height="70vh">
+            <center><h1 id="route-header">Current Route Details</h1></center>
             <ButtonWrapper>
               {showAddTrailButton()}
               {this.showDeleteButton()}
