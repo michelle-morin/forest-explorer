@@ -5,6 +5,7 @@ import { Map, TileLayer, GeoJSON } from 'react-leaflet';
 import { trailData } from '../data/trails.js';
 import styled from 'styled-components';
 import { Button } from 'react-bootstrap';
+import SurfaceChart from './SurfaceChart';
 import '../index.css';
 
 const SideBar = styled.div`
@@ -13,7 +14,7 @@ const SideBar = styled.div`
   position: absolute;
   z-index: 10000;
   top: 15vh;
-  left: 70vw;
+  left: 65vw;
   background-color: rgb(244,240,232, .7);
   border-radius: 10px;
   border: 1px solid  #D5D6DC;
@@ -59,18 +60,41 @@ class RouteBuilder extends React.Component {
     dispatch(getAllTrailsFromApi());
   }
 
+  generateChartData = () => {
+    const surfaces = [];
+    const route = this.state.verifiedRoute;
+    for (let i=0; i < route.length; i++) {
+      let match = surfaces.filter(obj => obj.x === route[i].surface);
+      if (match.length === 0) {
+        let surfaceObj = { x: route[i].surface, y: route[i].miles };
+        surfaces.push(surfaceObj);
+      } else if (match.length === 1) {
+        console.log(match);
+        const updatedMatch = { x: match[0].x, y: (match[0].y + route[i].miles) }
+        const index = surfaces.findIndex(obj => obj.x === route[i].surface);
+        surfaces.splice(index, 1, updatedMatch);
+      }
+    }
+    console.log(surfaces);
+    return surfaces;
+  }
+
   showRouteDetails() {
     if (this.state.verifiedRoute.length > 0) {
-      const roundedDistance = this.state.distance.toFixed(3);
+      const chartData = this.generateChartData();
       return (
-        <React.Fragment>
-        {/* <ul>
-          {(this.state.verifiedRoute).map(segment =>
-            <li key={segment.trailId}>{segment.name}</li>
-          )}
-        </ul> */}
-        <p class="trail-details"><span class="trails-header">Distance: </span>{roundedDistance} miles</p>
-        </React.Fragment>
+        <SurfaceChart
+          data={chartData}
+          totalDistance={this.props.distance}
+        />
+        // <React.Fragment>
+        // <ul>
+        //   {(this.state.verifiedRoute).map(segment =>
+        //     <li key={segment.trailId}>{segment.name}</li>
+        //   )}
+        // </ul>
+        // <p class="trail-details"><span class="trails-header">Distance: </span>{roundedDistance} miles</p>
+        // </React.Fragment>
       );
     }
   }
@@ -81,7 +105,7 @@ class RouteBuilder extends React.Component {
   }
 
   showDeleteButton() {
-    return (this.state.verifiedRoute.length > 0) ? <Button variant="outline-dark" onClick={() => this.deleteRoute()}>DELETE ROUTE</Button> : <Button variant="outline-dark" disabled="true">DELETE ROUTE</Button>
+    return (this.state.verifiedRoute.length > 0) ? <Button variant="outline-dark" onClick={() => this.deleteRoute()}>DELETE ROUTE</Button> : <Button variant="outline-dark" disabled={true}>DELETE ROUTE</Button>
   }
 
   render() {
@@ -130,7 +154,7 @@ class RouteBuilder extends React.Component {
     }
 
     const showAddTrailButton = () => {
-      return (this.state.selectedTarget !== null && determineIfSegmentCanBeAdded(this.state.selectedGeoId)) ? <Button variant="outline-dark" onClick={() => handleAddingSegmentToRoute(this.state.selectedGeoId, this.state.selectedTarget)}>+ ADD TO ROUTE</Button> : <Button variant="outline-dark" disabled="true">+ ADD TO ROUTE</Button>
+      return (this.state.selectedTarget !== null && determineIfSegmentCanBeAdded(this.state.selectedGeoId)) ? <Button variant="outline-dark" onClick={() => handleAddingSegmentToRoute(this.state.selectedGeoId, this.state.selectedTarget)}>+ ADD TO ROUTE</Button> : <Button variant="outline-dark" disabled={true}>+ ADD TO ROUTE</Button>
     }
 
     if (error) {
@@ -174,7 +198,7 @@ class RouteBuilder extends React.Component {
             />
             <GeoJSON id="trailLayer" data={trailData} onEachFeature={onEachFeature} />
           </Map>
-          <SideBar width="25vw" height="70vh">
+          <SideBar width="30vw" height="70vh">
             <center><h1 id="route-header">Current Route Details</h1></center>
             <ButtonWrapper>
               {showAddTrailButton()}
