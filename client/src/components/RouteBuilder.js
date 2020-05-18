@@ -75,7 +75,6 @@ class RouteBuilder extends React.Component {
         surfaces.splice(index, 1, updatedMatch);
       }
     }
-    console.log(surfaces);
     return surfaces;
   }
 
@@ -85,16 +84,8 @@ class RouteBuilder extends React.Component {
       return (
         <SurfaceChart
           data={chartData}
-          totalDistance={this.props.distance}
+          totalDistance={this.state.distance}
         />
-        // <React.Fragment>
-        // <ul>
-        //   {(this.state.verifiedRoute).map(segment =>
-        //     <li key={segment.trailId}>{segment.name}</li>
-        //   )}
-        // </ul>
-        // <p class="trail-details"><span class="trails-header">Distance: </span>{roundedDistance} miles</p>
-        // </React.Fragment>
       );
     }
   }
