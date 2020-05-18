@@ -1,27 +1,28 @@
 import React from 'react';
-import { VictoryPie, VictoryLabel } from 'victory';
+import { VictoryPie, VictoryLabel, VictoryContainer } from 'victory';
 import PropTypes from 'prop-types';
 
 function SurfaceChart(props) {
   const roundedDistance = parseFloat((props.totalDistance).toFixed(3));
   return (
-    <svg width={500} height={500}>
+    <VictoryContainer width={400} height={400}>
       <VictoryPie
         standalone={false}
         colorScale={["#008f68", "#EFBB35", "#6DB65B", "#4AAE9B", "#EF6D35"]}
         data={props.data}
-        width={500}
-        height={500}
-        innerRadius={125}
+        width={400}
+        height={400}
+        innerRadius={80}
+        style={{ labels: { fill: "#111111", fontSize: 18, padding: 4, fontFamily: "'Montserrat', sans-serif" } }}
       />
       <VictoryLabel
         textAnchor="middle"
         verticalAnchor="middle"
-        style={{ fontSize: 20 }}
-        x={250} y={250}
-        text={`${roundedDistance} miles`}
+        style={{ fontSize: 24, fontFamily: "'Montserrat', sans-serif" }}
+        x={200} y={200}
+        text={`${roundedDistance}\nmiles`}
       />
-    </svg>
+    </VictoryContainer>
   )
 }
 

@@ -25,6 +25,8 @@ const SideBar = styled.div`
 const ButtonWrapper = styled.div`
   display: flex;
   justify-content: space-between;
+  padding: 4%;
+  font-family: 'Montserrat', sans-serif;
 `;
 
 const routeStyle = {
@@ -189,13 +191,13 @@ class RouteBuilder extends React.Component {
             />
             <GeoJSON id="trailLayer" data={trailData} onEachFeature={onEachFeature} />
           </Map>
-          <SideBar width="30vw" height="70vh">
+          <SideBar width="30vw" height="auto">
             <center><h1 id="route-header">Current Route Details</h1></center>
             <ButtonWrapper>
               {showAddTrailButton()}
               {this.showDeleteButton()}
             </ButtonWrapper>
-            {this.showRouteDetails()}
+            <center>{this.showRouteDetails()}</center>
           </SideBar>
         </React.Fragment>
       )
