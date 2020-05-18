@@ -11,14 +11,7 @@
 
 body {
   margin: 0;
-  font-family: 'Architectural';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .leaflet-container {
@@ -64,6 +57,10 @@ a.nav-link {
   text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
 }
 
+a.nav-link:hover {
+  text-decoration: underline;
+}
+
 .show {
   background-color: rgba(255, 250, 250, 0.6);
 }
@@ -71,6 +68,21 @@ a.nav-link {
 .navbar-toggle {
   margin-top: 23px;
   padding: 9px 10px !important;
+}
+
+h1#route-header {
+  font-family: 'Architectural';
+  text-decoration: underline;
+  font-size: 3rem;
+}
+
+.trail-details {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+}
+
+.trails-header {
+  font-weight: bold;
 }
 
 @media (min-width: 768px) {
