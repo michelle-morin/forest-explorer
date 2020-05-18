@@ -65,6 +65,10 @@ a.nav-link:hover {
   background-color: rgba(255, 250, 250, 0.6);
 }
 
+.ml-auto {
+  margin-right: 6%;
+}
+
 .navbar-toggle {
   margin-top: 23px;
   padding: 9px 10px !important;
