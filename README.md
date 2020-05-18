@@ -109,6 +109,7 @@ In a separate Terminal or PowerShell window, enter the following commands at the
 * [React-Leaflet](https://react-leaflet.js.org/)
 * [Styled Components](https://styled-components.com/)
 * [React-Typist](https://github.com/jstejada/react-typist)
+* [Victory](https://formidable.com/open-source/victory/) (for route data visualization)
 * HTML
 * CSS
 * Adobe Photoshop
