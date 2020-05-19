@@ -7,6 +7,8 @@ import thunkMiddleware from 'redux-thunk';
 import trailsReducer from './reducers/trails-reducer';
 import { Provider } from 'react-redux';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-typist/dist/Typist.css';
+import 'react-typist/dist/standalone/Typist.js';
 import './index.css';
 
 const store = createStore(trailsReducer, applyMiddleware(thunkMiddleware));

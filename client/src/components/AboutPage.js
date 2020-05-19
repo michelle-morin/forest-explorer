@@ -11,6 +11,8 @@ const AboutWrapper = styled.div`
   top: 15vh;
   padding: 2%;
   font-size: 2rem;
+  overflow-y: auto;
+  text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
 `;
 
 function AboutPage() {
@@ -20,6 +22,10 @@ function AboutPage() {
       <AboutWrapper>
         <Typist>
           <p>Welcome!</p>
+          <p>This is a passion project fueled by my love of trail running in Forest Park.</p>
+          <p>Forest Park is a forested ecosystem spanning over 5,100 acres along the northwest urban boundary of Portland, Oregon.</p>
+          <p>In addition to the vast trail network beneath a canopy of old growth and second growth douglas firs, Forest Park is home to a diverse range of flora and fauna.</p>
+          <p>While this application encourages trail use, please be mindful of your impact on the trails and fragile ecosystems of our urban wilderness.</p>
         </Typist>
       </AboutWrapper>
       <Footer />
