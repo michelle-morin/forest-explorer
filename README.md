@@ -16,7 +16,7 @@ This application allows users to familiarize themselves with trails in Forest Pa
 * A user should be able to view which trails are currently in their running/hiking route based on color change of geojson features on the map.
 
 ## Component Tree
-![component tree](/planning/component-tree.jpg)
+![component tree](/planning/component-tree.png)
 
 ## Setup/Installation Requirements
 
