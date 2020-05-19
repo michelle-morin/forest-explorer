@@ -1,3 +1,5 @@
+## This document reflects some of the work that is not apparent in my commit history for this project
+
 ### Friday, May 8th
 
 * 7:30am - create subdirectory (client) for React front-end using create-react-app
@@ -46,3 +48,9 @@
 ### Saturday, May 16th
 
 * 5:30pm-7:15pm - created assets for splash page in photoshop
+
+### Tuesday, May 19th
+
+* 8am-2pm tracked via commit history
+
+* 2pm - decided to incorporate trails in washington park and the hoyt arboretum; spending the remainder of the day generating database entries and geojson data for each of these trails.
