@@ -19,7 +19,8 @@ function Splash() {
     left: '12vw',
     top: '15vh',
     fontSize: '7rem',
-    color: '#111111'
+    color: '#111111',
+    textShadow: '2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3)'
   }
   const linkBoxStyles = {
     position: 'absolute',
@@ -30,7 +31,8 @@ function Splash() {
   }
   const linkStyle = {
     color: '#111111',
-    marginRight: '20%'
+    marginRight: '20%',
+    textShadow: '2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3)'
   }
   const treeOneStyle = {
     position: 'absolute',
