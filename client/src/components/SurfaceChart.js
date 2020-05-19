@@ -8,18 +8,18 @@ function SurfaceChart(props) {
     <VictoryContainer width={400} height={400}>
       <VictoryPie
         standalone={false}
-        colorScale={["#008f68", "#EFBB35", "#6DB65B", "#4AAE9B", "#EF6D35"]}
+        colorScale={["rgb(238,193,175)", "rgb(201,221,188)", "rgb(146,169,219)", "rgb(213,215,232)"]}
         data={props.data}
-        width={400}
-        height={400}
-        innerRadius={80}
+        width={300}
+        height={300}
+        innerRadius={60}
         style={{ labels: { fill: "#111111", fontSize: 18, padding: 4, fontFamily: "'Montserrat', sans-serif" } }}
       />
       <VictoryLabel
         textAnchor="middle"
         verticalAnchor="middle"
         style={{ fontSize: 24, fontFamily: "'Montserrat', sans-serif" }}
-        x={200} y={200}
+        x={150} y={150}
         text={`${roundedDistance}\nmiles`}
       />
     </VictoryContainer>
