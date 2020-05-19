@@ -15,7 +15,7 @@ const SideBar = styled.div`
   z-index: 10000;
   top: 15vh;
   left: 65vw;
-  background-color: rgb(244,240,232, .7);
+  background-color: rgb(255,255,255, .75);
   border-radius: 10px;
   border: 1px solid  #D5D6DC;
   box-shadow: 0 6px 12px 0 rgba(0,0,0,0.25), 0 6px 12px 0 rgba(0,0,0,0.22);
