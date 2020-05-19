@@ -1,0 +1,257 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "This is a server for Forest Explorer, an interactive application for exploring trails and building hiking/running routes.",
+    "version": "1.0.0",
+    "title": "Trails Lookup",
+    "contact": {
+      "email": "morin2m@gmail.com"
+    }
+  },
+  "basePath": "/api",
+  "schemes": [
+    "https",
+    "http"
+  ],
+  "paths": {
+    "/Trails": {
+      "get": {
+        "summary": "Gets trails",
+        "description": "Returns a list of all trail segments in forest park or all trail segments having a name property matching an input name value. A name value(s) may be provided as a string",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "description": "Name value that may optionally be considered to filter list of trail segments",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "array",
+              "items": {
+                "required": [
+                  "trailId",
+                  "geoObjNumber",
+                  "name",
+                  "miles",
+                  "type",
+                  "surface",
+                  "firstAdjoiningSegment1",
+                  "firstAdjoiningSegment2",
+                  "firstAdjoiningSegment3",
+                  "firstAdjoiningSegment4",
+                  "secondAdjoiningSegment1",
+                  "secondAdjoiningSegment2",
+                  "secondAdjoiningSegment3",
+                  "secondAdjoiningSegment4"
+                ],
+                "properties": {
+                  "trailId": {
+                    "type": "integer"
+                  },
+                  "geoObjNumber": {
+                    "type": "integer"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "miles": {
+                    "type": "number"
+                  },
+                  "type": {
+                    "type": "string"
+                  },
+                  "surface": {
+                    "type": "string"
+                  },
+                  "firstAdjoiningSegment1": {
+                    "type": "integer"
+                  },
+                  "firstAdjoiningSegment2": {
+                    "type": "integer"
+                  },
+                  "firstAdjoiningSegment3": {
+                    "type": "integer"
+                  },
+                  "firstAdjoiningSegment4": {
+                    "type": "integer"
+                  },
+                  "secondAdjoiningSegment1": {
+                    "type": "integer"
+                  },
+                  "secondAdjoiningSegment2": {
+                    "type": "integer"
+                  },
+                  "secondAdjoiningSegment3": {
+                    "type": "integer"
+                  },
+                  "secondAdjoiningSegment4": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid name value"
+          },
+          "404": {
+            "description": "Trail not found"
+          }
+        }
+      }
+    },
+    "/Trails/{id}": {
+      "get": {
+        "summary": "Find trail by TrailId",
+        "description": "Returns a single trail segment",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID of trail segment to return",
+            "required": true,
+            "type": "integer",
+            "format": "int64"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "items": {
+                "required": [
+                  "trailId",
+                  "geoObjNumber",
+                  "name",
+                  "miles",
+                  "type",
+                  "surface",
+                  "firstAdjoiningSegment1",
+                  "firstAdjoiningSegment2",
+                  "firstAdjoiningSegment3",
+                  "firstAdjoiningSegment4",
+                  "secondAdjoiningSegment1",
+                  "secondAdjoiningSegment2",
+                  "secondAdjoiningSegment3",
+                  "secondAdjoiningSegment4"
+                ],
+                "properties": {
+                  "trailId": {
+                    "type": "integer"
+                  },
+                  "geoObjNumber": {
+                    "type": "integer"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "miles": {
+                    "type": "number"
+                  },
+                  "type": {
+                    "type": "string"
+                  },
+                  "surface": {
+                    "type": "string"
+                  },
+                  "firstAdjoiningSegment1": {
+                    "type": "integer"
+                  },
+                  "firstAdjoiningSegment2": {
+                    "type": "integer"
+                  },
+                  "firstAdjoiningSegment3": {
+                    "type": "integer"
+                  },
+                  "firstAdjoiningSegment4": {
+                    "type": "integer"
+                  },
+                  "secondAdjoiningSegment1": {
+                    "type": "integer"
+                  },
+                  "secondAdjoiningSegment2": {
+                    "type": "integer"
+                  },
+                  "secondAdjoiningSegment3": {
+                    "type": "integer"
+                  },
+                  "secondAdjoiningSegment4": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid ID supplied"
+          },
+          "404": {
+            "description": "Trail not found"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Trail": {
+      "type": "object",
+      "properties": {
+        "trailId": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "geoObjNumber": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "miles": {
+          "type": "number"
+        },
+        "type": {
+          "type": "string"
+        },
+        "surface": {
+          "type": "string"
+        },
+        "firstAdjoiningSegment1": {
+          "type": "integer"
+        },
+        "firstAdjoiningSegment2": {
+          "type": "integer"
+        },
+        "firstAdjoiningSegment3": {
+          "type": "integer"
+        },
+        "firstAdjoiningSegment4": {
+          "type": "integer"
+        },
+        "secondAdjoiningSegment1": {
+          "type": "integer"
+        },
+        "secondAdjoiningSegment2": {
+          "type": "integer"
+        },
+        "secondAdjoiningSegment3": {
+          "type": "integer"
+        },
+        "secondAdjoiningSegment4": {
+          "type": "integer"
+        }
+      }
+    }
+  }
+}

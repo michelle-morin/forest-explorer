@@ -30,6 +30,8 @@ namespace TrailsLookup
 				.WithMethods("GET")
 				.AllowAnyHeader();
 			}));
+
+			services.AddSwaggerDocument();
 		}
 
 		public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -45,6 +47,8 @@ namespace TrailsLookup
 			}
 
 			app.UseCors();
+			app.UseOpenApi();
+    	app.UseSwaggerUi3();
 			// app.UseHttpsRedirection();
 			app.UseMvc();
 		}
