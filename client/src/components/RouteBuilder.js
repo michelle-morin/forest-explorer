@@ -197,7 +197,7 @@ class RouteBuilder extends React.Component {
               {showAddTrailButton()}
               {this.showDeleteButton()}
             </ButtonWrapper>
-            <center>{this.showRouteDetails()}</center>
+            {this.showRouteDetails()}
           </SideBar>
         </React.Fragment>
       )
