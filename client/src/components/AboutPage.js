@@ -1,5 +1,6 @@
 import React from 'react';
 import NavBar from './NavBar';
+import Footer from './Footer';
 import Typist from 'react-typist';
 import styled from 'styled-components';
 import './../index.css';
@@ -21,6 +22,7 @@ function AboutPage() {
           <p>Welcome!</p>
         </Typist>
       </AboutWrapper>
+      <Footer />
     </React.Fragment>
   );
 }
