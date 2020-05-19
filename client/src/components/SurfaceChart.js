@@ -12,7 +12,7 @@ function SurfaceChart(props) {
         colorScale={["rgb(95,188,228)", "rgb(73,161,105)", "rgb(228,212,121)", "rgb(220,114,48)"]}
         data={props.data}
         innerRadius={100}
-        style={{ labels: { fill: "#111111", fontSize: 18, padding: 2, fontFamily: "'Montserrat', sans-serif" } }}
+        style={{ labels: { fill: "#111111", fontSize: 14, padding: 2, fontFamily: "'Montserrat', sans-serif" } }}
       />
       <VictoryLabel
         textAnchor="middle"
