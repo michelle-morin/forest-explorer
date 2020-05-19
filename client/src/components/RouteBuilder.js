@@ -186,7 +186,7 @@ class RouteBuilder extends React.Component {
         <React.Fragment>
           <Map center={[45.57, -122.7163]} zoom={13} zoomControl={false}>
             <TileLayer 
-              url="http://a.sm.mapstack.stamen.com/(terrain-background,(watercolor,$fff[@10])[@70],(positron,$fff[@10])[@50])/{z}/{x}/{y}.png"
+              url="http://d.sm.mapstack.stamen.com/(toner-background,(watercolor,$000[@20])[lighter],terrain-background[overlay])/{z}/{x}/{y}.png"
               maxZoom={19}
             />
             <GeoJSON id="trailLayer" data={trailData} onEachFeature={onEachFeature} />

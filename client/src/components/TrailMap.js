@@ -89,7 +89,7 @@ class TrailMap extends React.Component {
     return (
       <Map center={[45.57, -122.7163]} zoomControl={false} zoom={13}>
         <TileLayer 
-          url="http://a.sm.mapstack.stamen.com/(terrain-background,(watercolor,$fff[@10])[@70],(positron,$fff[@10])[@50])/{z}/{x}/{y}.png"
+          url="http://d.sm.mapstack.stamen.com/(toner-background,(watercolor,$000[@20])[lighter],terrain-background[overlay])/{z}/{x}/{y}.png"
           maxZoom={19}
         />
         <GeoJSON id="trailLayer" data={trailData} onEachFeature={onEachTrailFeature} />
