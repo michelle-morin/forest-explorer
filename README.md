@@ -91,6 +91,18 @@ In a separate Terminal or PowerShell window, enter the following commands at the
 * ``npm install``
 * ``npm start``
 
+### All endpoints of the TrailsLookup API use host 'localhost:5000' and base path '/api'
+* '/Trails'
+  * GET request
+  * returns a list of all trail segments in the database.
+  * optionally accepts a query parameter of a trail name to filter the list of results (e.g., '/trails?name=wildwood%20trail' returns a list of all trail objects from the database table ``trails`` having a name "wildwood trail")
+* '/Trails/{id}'
+  * GET request
+  * requires an id parameter (TrailId of the trail object) in the path of the API request
+  * a successful request (200 OK) returns a single trail
+#### To test each API route, open the [Swagger UI](http://localhost:5000/swagger/index.html#/) while the server is running.
+
+
 ## Technologies Used
 
 ### Backend:
@@ -99,6 +111,8 @@ In a separate Terminal or PowerShell window, enter the following commands at the
 * dotnet script v0.50.1
 * MySQL v8.0.15
 * Entity Framework Core v2.2
+* Swagger specification
+* NSwag middleware
 
 ### Frontend:
 * Test Driven Development
