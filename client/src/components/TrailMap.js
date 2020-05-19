@@ -35,7 +35,7 @@ class TrailMap extends React.Component {
       color: 'rgb(246,189,111)'
     }
     const selectedStyle = {
-      color: 'rgb(204,65,118)'
+      color: '#654321'
     }
     const popupOptions = {
       className: 'custom-popup'
