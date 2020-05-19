@@ -18,6 +18,11 @@ This application allows users to familiarize themselves with trails in Forest Pa
 ## Component Tree
 ![component tree](/planning/component-tree.png)
 
+## User Interfaces
+![splash page](/planning/splash.png)
+![explore page](/planning/explore.png)
+![plan page](/planning/plan.png)
+
 ## Setup/Installation Requirements
 
 ### Install .NET Core
