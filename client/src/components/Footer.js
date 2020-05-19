@@ -8,7 +8,7 @@ function Footer() {
     left: 0;
     bottom: 0;
     width: 100%;
-    border-top: 2px solid rgba(0,0,0,.75);
+    border-top: 1px solid rgba(0,0,0,.75);
     color: rgba(0,0,0,.75);
     text-align: center;
     font-family: 'Montserrat', sans-serif;
