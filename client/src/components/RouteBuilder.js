@@ -80,6 +80,14 @@ class RouteBuilder extends React.Component {
     return surfaces;
   }
 
+  showInstructions() {
+    if(this.state.verifiedRoute.length === 0) {
+      return (
+        <center><h3 className="instructions">select a trail, then click add to route</h3></center>
+      );
+    }
+  }
+
   showRouteDetails() {
     if (this.state.verifiedRoute.length > 0) {
       const chartData = this.generateChartData();
@@ -192,7 +200,7 @@ class RouteBuilder extends React.Component {
             <GeoJSON id="trailLayer" data={trailData} onEachFeature={onEachFeature} />
           </Map>
           <SideBar width="30vw" height="auto">
-            <center><h1 id="route-header">Current Route Details</h1></center>
+            {this.showInstructions()}
             <ButtonWrapper>
               {showAddTrailButton()}
               {this.showDeleteButton()}

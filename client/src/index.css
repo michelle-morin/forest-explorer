@@ -89,6 +89,10 @@ h1#route-header {
   font-weight: bold;
 }
 
+h3.instructions {
+  font-family: 'Montserrat', sans-serif;
+}
+
 @media (min-width: 768px) {
   .navbar-nav > li > a {
     padding-top: 26.5px;
