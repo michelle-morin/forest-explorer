@@ -12,7 +12,6 @@ const AboutWrapper = styled.div`
   padding: 2%;
   font-size: 2rem;
   overflow-y: auto;
-  text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
 `;
 
 function AboutPage() {
@@ -20,7 +19,7 @@ function AboutPage() {
     <React.Fragment>
       <NavBar />
       <AboutWrapper>
-        <Typist>
+        <Typist cursor={{ hideWhenDone: true }}>
           <p>Welcome!</p>
           <p>This is a passion project fueled by my love of trail running in Forest Park.</p>
           <p>Forest Park is a forested ecosystem spanning over 5,100 acres along the northwest urban boundary of Portland, Oregon.</p>
