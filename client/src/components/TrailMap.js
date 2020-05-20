@@ -3,6 +3,7 @@ import L from 'leaflet';
 import { Map, TileLayer, GeoJSON } from 'react-leaflet';
 import { trailData } from '../data/trails.js';
 import { trailheads } from '../data/trailheads.js';
+import { hoytAndWashParkTrails } from '../data/washPark.js';
 import tree from './../assets/img/tree.png';
 import '../index.css';
 
@@ -93,6 +94,7 @@ class TrailMap extends React.Component {
           maxZoom={19}
         />
         <GeoJSON id="trailLayer" data={trailData} onEachFeature={onEachTrailFeature} />
+        <GeoJSON id="hwTrailLayer" data={hoytAndWashParkTrails} onEachFeature={onEachTrailFeature} />
         <GeoJSON id="trailheadLayer" data={trailheads} pointToLayer={pointToLayer} onEachFeature={onEachTrailheadFeature} />
       </Map>
     );
