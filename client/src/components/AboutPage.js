@@ -13,14 +13,16 @@ const AboutWrapper = styled.div`
   padding-bottom: 2rem;
   font-size: 2rem;
   height: auto;
+  overflow-y: scroll;
   @media (max-width: 500px) {
     top: 20vh;
+    margin-bottom: 20%;
   }
   @media (max-width: 360px) {
     top: 22vh;
   }
   @media (max-width: 320px) {
-    top: 25vh;
+    top: 26vh;
   }
 `;
 
