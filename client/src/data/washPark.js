@@ -2,6 +2,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 307,
             "GeoObjNumber": 934,
             "Name": "White Pine Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -194,6 +195,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 308,
             "GeoObjNumber": 83,
             "Name": "White Pine Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -358,6 +360,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 309,
             "GeoObjNumber": 844,
             "Name": "Site Trail (HA)",
             "Type": "Trail/Path (1-3 ft.)",
@@ -414,6 +417,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 310,
             "GeoObjNumber": 845,
             "Name": "Bristlecone Pine Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -494,6 +498,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 311,
             "GeoObjNumber": 840,
             "Name": "White Pine Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -526,6 +531,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 312,
             "GeoObjNumber": 698,
             "Name": "White Pine Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -794,6 +800,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 313,
             "GeoObjNumber": 851,
             "Name": "White Pine Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -898,6 +905,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 314,
             "GeoObjNumber": 157,
             "Name": "White Pine Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -926,6 +934,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 315,
             "GeoObjNumber": 165,
             "Name": "White Pine Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -970,6 +979,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 316,
             "GeoObjNumber": 167,
             "Name": "White Pine Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -1046,6 +1056,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 317,
             "GeoObjNumber": 379,
             "Name": "White Pine Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -1146,6 +1157,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 318,
             "GeoObjNumber": 215,
             "Name": "White Pine Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -1314,6 +1326,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 319,
             "GeoObjNumber": 2485,
             "Name": "Site Trail (HA)",
             "Type": "Trail/Path (1-3 ft.)",
@@ -1486,6 +1499,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 320,
             "GeoObjNumber": 2479,
             "Name": "Wildwood Trail",
             "Type": "Trail/Path (5-6 ft.)",
@@ -1518,6 +1532,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 321,
             "GeoObjNumber": 911,
             "Name": "Wildwood Trail",
             "Type": "Trail/Path (5-6 ft.)",
@@ -1574,6 +1589,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 322,
             "GeoObjNumber": 879,
             "Name": "site trail (HA)",
             "Type": "Trail/Path (5-6 ft.)",
@@ -1602,6 +1618,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 323,
             "GeoObjNumber": 1010,
             "Name": "Marquam Trail",
             "Type": "Trail/Path (5-6 ft.)",
@@ -1846,6 +1863,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 324,
             "GeoObjNumber": 1519,
             "Name": "Marquam Trail",
             "Type": "Trail/Path (5-6 ft.)",
@@ -2494,6 +2512,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 325,
             "GeoObjNumber": 2481,
             "Name": "Marquam Trail",
             "Type": "Trail/Path (5-6 ft.)",
@@ -3054,6 +3073,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 326,
             "GeoObjNumber": 1520,
             "Name": "Old Marquam Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -3178,6 +3198,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 327,
             "GeoObjNumber": 322,
             "Name": "Marquam Trail",
             "Type": "on-street trail",
@@ -3226,6 +3247,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 328,
             "GeoObjNumber": 798,
             "Name": "SW Zoo Rd.",
             "Type": "on-street trail",
@@ -3390,6 +3412,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 329,
             "GeoObjNumber": 1012,
             "Name": "SW Knight Blvd.",
             "Type": "on-street trail",
@@ -3562,6 +3585,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 330,
             "GeoObjNumber": 65,
             "Name": "Site Trail (HA)",
             "Type": "Trail/Path (1-3 ft.)",
@@ -3618,6 +3642,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 331,
             "GeoObjNumber": 66,
             "Name": "Site Trail (HA)",
             "Type": "Trail/Path (1-3 ft.)",
@@ -3746,6 +3771,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 332,
             "GeoObjNumber": 995,
             "Name": "Site Trail (HA)",
             "Type": "Trail/Path (1-3 ft.)",
@@ -3770,6 +3796,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 333,
             "GeoObjNumber": 993,
             "Name": "SW Knight Blvd.",
             "Type": "on-street trail",
@@ -3794,6 +3821,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 334,
             "GeoObjNumber": 991,
             "Name": "Site Trail (HA)",
             "Type": null,
@@ -3854,6 +3882,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 335,
             "GeoObjNumber": 586,
             "Name": "Vietnam Veterans Memorial",
             "Type": null,
@@ -3882,6 +3911,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 336,
             "GeoObjNumber": 590,
             "Name": "Vietnam Veterans Memorial",
             "Type": null,
@@ -4086,6 +4116,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 337,
             "GeoObjNumber": 585,
             "Name": "Vietnam Veterans Memorial",
             "Type": null,
@@ -4266,6 +4297,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 338,
             "GeoObjNumber": 369,
             "Name": "Vietnam Veterans Memorial",
             "Type": null,
@@ -4578,6 +4610,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 339,
             "GeoObjNumber": 584,
             "Name": "Site Trail (HA)",
             "Type": null,
@@ -4618,6 +4651,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 340,
             "GeoObjNumber": 990,
             "Name": "SW Knight Blvd.",
             "Type": "on-street trail",
@@ -4658,6 +4692,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 341,
             "GeoObjNumber": 376,
             "Name": "Site Trail (HA)",
             "Type": null,
@@ -4722,6 +4757,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 342,
             "GeoObjNumber": 375,
             "Name": "SW Knight Blvd.",
             "Type": "on-street trail",
@@ -4778,9 +4814,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 343,
             "GeoObjNumber": 371,
             "Name": "Site Trail (HA)",
-            "Type": null,
+            "Type": "pedestrian path",
             "Surface": "concrete",
             "Miles": 0.0484264,
             "Shape_Length": 111.2389707883042
@@ -4886,6 +4923,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 344,
             "GeoObjNumber": 880,
             "Name": "Wildwood Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -4970,9 +5008,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 345,
             "GeoObjNumber": 885,
             "Name": "Site Trail (HA)",
-            "Type": null,
+            "Type": "pedestrian path",
             "Surface": "gravel",
             "Miles": 0.05750461,
             "Shape_Length": 132.11627151028242
@@ -5018,6 +5057,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 346,
             "GeoObjNumber": 576,
             "Name": "Wildwood Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -5058,6 +5098,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 347,
             "GeoObjNumber": 581,
             "Name": "Wildwood Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -5114,6 +5155,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 348,
             "GeoObjNumber": 878,
             "Name": "Marquam Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -5218,6 +5260,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 349,
             "GeoObjNumber": 2478,
             "Name": "Wildwood Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -5258,6 +5301,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 350,
             "GeoObjNumber": 988,
             "Name": "Wildwood Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -5310,10 +5354,11 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 351,
             "GeoObjNumber": 2480,
             "Name": "Site Trail (HA)",
             "Type": "Trail/Path (1-3 ft.)",
-            "Surface": null,
+            "Surface": "surface unknown",
             "Miles": 0.05329237,
             "Shape_Length": 122.45651405380843
         },
@@ -5338,6 +5383,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 352,
             "GeoObjNumber": 910,
             "Name": "Maple Trail (HA)",
             "Type": "Trail/Path (1-3 ft.)",
@@ -5382,6 +5428,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 353,
             "GeoObjNumber": 217,
             "Name": "Site Trail (HA)",
             "Type": "Trail/Path (1-3 ft.)",
@@ -5430,6 +5477,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 354,
             "GeoObjNumber": 214,
             "Name": "Wildwood Trail",
             "Type": "Trail/Path (5-6 ft.)",
@@ -5614,6 +5662,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 355,
             "GeoObjNumber": 393,
             "Name": "Maintenance Road (HA)",
             "Type": "Maintenance Road",
@@ -5666,6 +5715,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 356,
             "GeoObjNumber": 381,
             "Name": "Maintenance Road (HA)",
             "Type": "Maintenance Road",
@@ -5778,6 +5828,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 357,
             "GeoObjNumber": 855,
             "Name": "Fir Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -5806,6 +5857,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 358,
             "GeoObjNumber": 385,
             "Name": "Fir Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -5966,6 +6018,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 359,
             "GeoObjNumber": 168,
             "Name": "Fir Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -6022,6 +6075,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 360,
             "GeoObjNumber": 158,
             "Name": "Redwood Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -6126,6 +6180,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 361,
             "GeoObjNumber": 164,
             "Name": "Fir Trail",
             "Type": "Maintenance Road",
@@ -6166,6 +6221,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 362,
             "GeoObjNumber": 852,
             "Name": "Fir Trail",
             "Type": "Maintenance Road",
@@ -6198,6 +6254,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 363,
             "GeoObjNumber": 154,
             "Name": "Redwood Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -6354,6 +6411,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 364,
             "GeoObjNumber": 972,
             "Name": "Site Trail (HA)",
             "Type": "Trail/Path (1-3 ft.)",
@@ -6426,6 +6484,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 365,
             "GeoObjNumber": 699,
             "Name": "Redwood Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -6566,8 +6625,9 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 366,
             "GeoObjNumber": 252,
-            "Name": "site trail (HA)",
+            "Name": "Site Trail (HA)",
             "Type": "Trail/Path (1-3 ft.)",
             "Surface": "soil",
             "Miles": 0.02487517,
@@ -6630,6 +6690,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 367,
             "GeoObjNumber": 969,
             "Name": "Creek Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -6798,6 +6859,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 368,
             "GeoObjNumber": 2488,
             "Name": "Bristlecone Pine Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -6822,9 +6884,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 369,
             "GeoObjNumber": 247,
             "Name": "Bristlecone Pine Trail",
-            "Type": null,
+            "Type": "pedestrian path",
             "Surface": "asphalt",
             "Miles": 0.11201296,
             "Shape_Length": 257.57564582808493
@@ -6974,9 +7037,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 370,
             "GeoObjNumber": 253,
             "Name": "Bristlecone Pine Trail",
-            "Type": null,
+            "Type": "pedestrian path",
             "Surface": "asphalt",
             "Miles": 0.04264067,
             "Shape_Length": 97.93219531764613
@@ -7078,9 +7142,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 371,
             "GeoObjNumber": 694,
             "Name": "Bristlecone Pine Trail",
-            "Type": null,
+            "Type": "pedestrian path",
             "Surface": "asphalt",
             "Miles": 0.04434757,
             "Shape_Length": 101.8961989844126
@@ -7194,9 +7259,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 372,
             "GeoObjNumber": 692,
             "Name": "Bristlecone Pine Trail",
-            "Type": null,
+            "Type": "pedestrian path",
             "Surface": "asphalt",
             "Miles": 0.02631028,
             "Shape_Length": 60.49823344607018
@@ -7258,6 +7324,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 373,
             "GeoObjNumber": 696,
             "Name": "Bristlecone Pine Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -7298,9 +7365,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 374,
             "GeoObjNumber": 248,
             "Name": "Bristlecone Pine Trail",
-            "Type": null,
+            "Type": "pedestrian path",
             "Surface": "asphalt",
             "Miles": 0.09855698,
             "Shape_Length": 226.53715672690046
@@ -7454,9 +7522,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 375,
             "GeoObjNumber": 241,
             "Name": "Bristlecone Pine Trail",
-            "Type": null,
+            "Type": "pedestrian path",
             "Surface": "asphalt",
             "Miles": 0.01063307,
             "Shape_Length": 24.397167573850624
@@ -7486,9 +7555,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 376,
             "GeoObjNumber": 242,
             "Name": "Bristlecone Pine Trail",
-            "Type": null,
+            "Type": "pedestrian path",
             "Surface": "asphalt",
             "Miles": 0.04543936,
             "Shape_Length": 104.38137317242646
@@ -7574,6 +7644,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 377,
             "GeoObjNumber": 869,
             "Name": "Bristlecone Pine Trail",
             "Type": null,
@@ -7618,6 +7689,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 378,
             "GeoObjNumber": 870,
             "Name": "Bristlecone Pine Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -7678,6 +7750,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 379,
             "GeoObjNumber": 362,
             "Name": "Bristlecone Pine Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -7846,6 +7919,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 380,
             "GeoObjNumber": 2489,
             "Name": "Site Trail (HA)",
             "Type": "Trail/Path (1-3 ft.)",
@@ -7890,6 +7964,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 381,
             "GeoObjNumber": 251,
             "Name": "Creek Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -7942,6 +8017,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 382,
             "GeoObjNumber": 363,
             "Name": "Redwood Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -8106,6 +8182,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 383,
             "GeoObjNumber": 954,
             "Name": "Redwood Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -8210,6 +8287,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 384,
             "GeoObjNumber": 956,
             "Name": "Creek Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -8306,6 +8384,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 385,
             "GeoObjNumber": 446,
             "Name": "Wildwood Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -8450,6 +8529,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 386,
             "GeoObjNumber": 447,
             "Name": "Wildwood Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -8570,6 +8650,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 387,
             "GeoObjNumber": 448,
             "Name": "Wildwood Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -8754,6 +8835,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 388,
             "GeoObjNumber": 839,
             "Name": "Wildwood Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -8898,6 +8980,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 389,
             "GeoObjNumber": 942,
             "Name": "Spruce Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -9006,10 +9089,11 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 390,
             "GeoObjNumber": 2487,
             "Name": "Fir Trail Loop",
-            "Type": null,
-            "Surface": null,
+            "Type": "pedestrian path",
+            "Surface": "surface unknown",
             "Miles": 0.01126414,
             "Shape_Length": 25.842864935858216
         },
@@ -9030,6 +9114,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 391,
             "GeoObjNumber": 364,
             "Name": "Site Trail (HA)",
             "Type": "Trail/Path (1-3 ft.)",
@@ -9134,6 +9219,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 392,
             "GeoObjNumber": 245,
             "Name": "Spruce Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -9246,6 +9332,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 393,
             "GeoObjNumber": 2486,
             "Name": "Wildwood Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -9294,6 +9381,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 394,
             "GeoObjNumber": 246,
             "Name": "Fir Trail Loop",
             "Type": "Trail/Path (1-3 ft.)",
@@ -9446,6 +9534,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 395,
             "GeoObjNumber": 254,
             "Name": "Spruce Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -9578,6 +9667,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 396,
             "GeoObjNumber": 976,
             "Name": "Fir Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -9638,6 +9728,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 397,
             "GeoObjNumber": 695,
             "Name": "Site Trail (HA)",
             "Type": "Trail/Path (1-3 ft.)",
@@ -9698,6 +9789,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 398,
             "GeoObjNumber": 255,
             "Name": "Spruce Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -9758,6 +9850,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 399,
             "GeoObjNumber": 249,
             "Name": "Fir Trail Loop",
             "Type": "Trail/Path (1-3 ft.)",
@@ -9862,6 +9955,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 400,
             "GeoObjNumber": 973,
             "Name": "Spruce Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -9902,8 +9996,9 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 401,
             "GeoObjNumber": 321,
-            "Name": "site trail (HA)",
+            "Name": "Site Trail (HA)",
             "Type": "Trail/Path (1-3 ft.)",
             "Surface": "soil",
             "Miles": 0.09364377,
@@ -10038,6 +10133,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 402,
             "GeoObjNumber": 319,
             "Name": "Fir Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -10098,9 +10194,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 403,
             "GeoObjNumber": 320,
             "Name": "Fir Trail",
-            "Type": null,
+            "Type": "pedestrian path",
             "Surface": "asphalt",
             "Miles": 0.00969926,
             "Shape_Length": 22.243417336695174
@@ -10130,33 +10227,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
-            "GeoObjNumber": 166,
-            "Name": "site trail (HA)",
-            "Type": null,
-            "Surface": "concrete",
-            "Miles": 0.01647613,
-            "Shape_Length": 37.824064826640125
-        },
-        "geometry": {
-            "type": "LineString",
-            "coordinates": [
-                [
-                    -122.7166902494082,
-                    45.51556786906128
-                ],
-                [
-                    -122.71641737625916,
-                    45.5154260016825
-                ]
-            ]
-        }
-    },
-    {
-        "type": "Feature",
-        "properties": {
+            "TrailId": 404,
             "GeoObjNumber": 318,
-            "Name": "site trail (HA)",
-            "Type": null,
+            "Name": "Site Trail (HA)",
+            "Type": "pedestrian path",
             "Surface": "asphalt",
             "Miles": 0.03297724,
             "Shape_Length": 75.66957147624785
@@ -10210,9 +10284,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 405,
             "GeoObjNumber": 854,
-            "Name": "site trail (HA)",
-            "Type": null,
+            "Name": "Site Trail (HA)",
+            "Type": "pedestrian path",
             "Surface": "gravel",
             "Miles": 0.03549116,
             "Shape_Length": 81.57272330396536
@@ -10246,9 +10321,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 406,
             "GeoObjNumber": 382,
-            "Name": "site trail (HA)",
-            "Type": null,
+            "Name": "Site Trail (HA)",
+            "Type": "pedestrian path",
             "Surface": "concrete",
             "Miles": 0.02361624,
             "Shape_Length": 54.186055149161426
@@ -10298,9 +10374,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 407,
             "GeoObjNumber": 316,
             "Name": "site trail (HA)",
-            "Type": null,
+            "Type": "walkway",
             "Surface": "concrete",
             "Miles": 0.00585474,
             "Shape_Length": 13.437915529420062
@@ -10326,9 +10403,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 408,
             "GeoObjNumber": 2072,
-            "Name": "site trail (HA)",
-            "Type": null,
+            "Name": "Site Trail (HA)",
+            "Type": "walkway",
             "Surface": "concrete",
             "Miles": 0.00913985,
             "Shape_Length": 21.0234818169276
@@ -10366,9 +10444,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 409,
             "GeoObjNumber": 317,
-            "Name": "site trail (HA)",
-            "Type": null,
+            "Name": "Site Trail (HA)",
+            "Type": "walkway",
             "Surface": "concrete",
             "Miles": 0.01214749,
             "Shape_Length": 27.888057677002433
@@ -10438,9 +10517,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 410,
             "GeoObjNumber": 162,
-            "Name": "site trail (HA)",
-            "Type": null,
+            "Name": "Site Trail (HA)",
+            "Type": "walkway",
             "Surface": "concrete",
             "Miles": 0.01041771,
             "Shape_Length": 23.907554580634795
@@ -10470,9 +10550,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 411,
             "GeoObjNumber": 163,
-            "Name": "site trail (HA)",
-            "Type": null,
+            "Name": "Site Trail (HA)",
+            "Type": "walkway",
             "Surface": "concrete",
             "Miles": 0.00932833,
             "Shape_Length": 21.392902067493512
@@ -10514,9 +10595,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 412,
             "GeoObjNumber": 859,
-            "Name": "site trail (HA)",
-            "Type": null,
+            "Name": "Site Trail (HA)",
+            "Type": "walkway",
             "Surface": "concrete",
             "Miles": 0.04047704,
             "Shape_Length": 93.0392974300202
@@ -10562,9 +10644,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 413,
             "GeoObjNumber": 170,
-            "Name": "site trail (HA)",
-            "Type": null,
+            "Name": "Site Trail (HA)",
+            "Type": "walkway",
             "Surface": "asphalt",
             "Miles": 0.02052684,
             "Shape_Length": 47.13583455813906
@@ -10626,8 +10709,9 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 414,
             "GeoObjNumber": 857,
-            "Name": "site trail (HA)",
+            "Name": "Site Trail (HA)",
             "Type": "Trail/Path (1-3 ft.)",
             "Surface": "soil",
             "Miles": 0.00937665,
@@ -10654,9 +10738,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 415,
             "GeoObjNumber": 169,
-            "Name": "site trail (HA)",
-            "Type": null,
+            "Name": "Site Trail (HA)",
+            "Type": "pedestrian path",
             "Surface": "asphalt",
             "Miles": 0.06471372,
             "Shape_Length": 148.63059728953814
@@ -10722,9 +10807,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 416,
             "GeoObjNumber": 380,
-            "Name": "site trail (HA)",
-            "Type": null,
+            "Name": "Site Trail (HA)",
+            "Type": "walkway",
             "Surface": "concrete",
             "Miles": 0.00672013,
             "Shape_Length": 15.414190197514033
@@ -10746,6 +10832,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 417,
             "GeoObjNumber": 860,
             "Name": "Beech Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -10802,6 +10889,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 418,
             "GeoObjNumber": 858,
             "Name": "Beech Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -10898,6 +10986,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 419,
             "GeoObjNumber": 155,
             "Name": "Oak Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -11002,6 +11091,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 420,
             "GeoObjNumber": 156,
             "Name": "Oak Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -11114,9 +11204,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 421,
             "GeoObjNumber": 977,
             "Name": "Oak Trail",
-            "Type": null,
+            "Type": "Trail/Path (1-3 ft.)",
             "Surface": "gravel",
             "Miles": 0.00865268,
             "Shape_Length": 19.905810829176026
@@ -11142,9 +11233,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 422,
             "GeoObjNumber": 159,
-            "Name": "site trail (HA)",
-            "Type": null,
+            "Name": "Site Trail (HA)",
+            "Type": "walkway",
             "Surface": "asphalt",
             "Miles": 0.01158659,
             "Shape_Length": 26.65423067985411
@@ -11170,8 +11262,9 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 423,
             "GeoObjNumber": 693,
-            "Name": "site trail (HA)",
+            "Name": "Site Trail (HA)",
             "Type": "Trail/Path (1-3 ft.)",
             "Surface": "soil",
             "Miles": 0.02034532,
@@ -11230,6 +11323,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 424,
             "GeoObjNumber": 691,
             "Name": "Oak Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -11342,6 +11436,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 425,
             "GeoObjNumber": 958,
             "Name": "Wildwood Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -11558,6 +11653,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 426,
             "GeoObjNumber": 250,
             "Name": "Wildwood Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -11810,6 +11906,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 427,
             "GeoObjNumber": 697,
             "Name": "Beech Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -11922,6 +12019,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 428,
             "GeoObjNumber": 853,
             "Name": "Magnolia Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -12070,6 +12168,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 429,
             "GeoObjNumber": 979,
             "Name": "Beech Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -12202,8 +12301,9 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 430,
             "GeoObjNumber": 383,
-            "Name": "site trail (HA)",
+            "Name": "Site Trail (HA)",
             "Type": "Trail/Path (1-3 ft.)",
             "Surface": "soil",
             "Miles": 0.06939316,
@@ -12290,6 +12390,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 431,
             "GeoObjNumber": 856,
             "Name": "Beech Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -12366,6 +12467,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 432,
             "GeoObjNumber": 392,
             "Name": "Magnolia Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -12666,6 +12768,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 433,
             "GeoObjNumber": 984,
             "Name": "Wildwood Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -12714,8 +12817,9 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 434,
             "GeoObjNumber": 389,
-            "Name": "site trail (HA)",
+            "Name": "Site Trail (HA)",
             "Type": "Maintenance Road",
             "Surface": "gravel",
             "Miles": 0.06477231,
@@ -12850,9 +12954,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 435,
             "GeoObjNumber": 983,
             "Name": "Overlook Trail",
-            "Type": null,
+            "Type": "pedestrian path",
             "Surface": "chipseal",
             "Miles": 0.11572512,
             "Shape_Length": 265.68405091681353
@@ -13050,9 +13155,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 436,
             "GeoObjNumber": 981,
             "Name": "Holly Loop",
-            "Type": null,
+            "Type": "pedestrian path",
             "Surface": "gravel",
             "Miles": 0.05234881,
             "Shape_Length": 120.31420640136201
@@ -13146,6 +13252,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 437,
             "GeoObjNumber": 874,
             "Name": "Wildwood Trail",
             "Type": "Trail/Path (5-6 ft.)",
@@ -13174,6 +13281,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 438,
             "GeoObjNumber": 904,
             "Name": "Wildwood Trail",
             "Type": "Trail/Path (5-6 ft.)",
@@ -13230,9 +13338,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 439,
             "GeoObjNumber": 871,
             "Name": "Holly Loop",
-            "Type": null,
+            "Type": "pedestrian path",
             "Surface": "gravel",
             "Miles": 0.0114291,
             "Shape_Length": 26.237618868052962
@@ -13254,9 +13363,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 440,
             "GeoObjNumber": 982,
             "Name": "Holly Loop",
-            "Type": null,
+            "Type": "pedestrian path",
             "Surface": "gravel",
             "Miles": 0.04434817,
             "Shape_Length": 101.74861960188007
@@ -13310,9 +13420,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 441,
             "GeoObjNumber": 391,
             "Name": "Holly Loop",
-            "Type": null,
+            "Type": "pedestrian path",
             "Surface": "gravel",
             "Miles": 0.03458788,
             "Shape_Length": 79.45798078975524
@@ -13394,8 +13505,9 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 442,
             "GeoObjNumber": 985,
-            "Name": "site trail (HA)",
+            "Name": "Site Trail (HA)",
             "Type": "Trail/Path (1-3 ft.)",
             "Surface": "soil",
             "Miles": 0.04176674,
@@ -13506,6 +13618,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 443,
             "GeoObjNumber": 873,
             "Name": "Wildwood Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -13582,6 +13695,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 444,
             "GeoObjNumber": 872,
             "Name": "Wildwood Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -13642,6 +13756,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 445,
             "GeoObjNumber": 912,
             "Name": "Maple Trail (HA)",
             "Type": "Trail/Path (1-3 ft.)",
@@ -13814,9 +13929,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 446,
             "GeoObjNumber": 131,
             "Name": "Overlook Trail",
-            "Type": null,
+            "Type": "pedestrian path",
             "Surface": "chipseal",
             "Miles": 0.09194119,
             "Shape_Length": 210.98732659453339
@@ -14046,6 +14162,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 447,
             "GeoObjNumber": 2482,
             "Name": "Hawthorn Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -14110,6 +14227,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 448,
             "GeoObjNumber": 2483,
             "Name": "Overlook Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -14142,6 +14260,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 449,
             "GeoObjNumber": 132,
             "Name": "Overlook Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -14202,8 +14321,9 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 450,
             "GeoObjNumber": 580,
-            "Name": "site trail (HA)",
+            "Name": "Site Trail (HA)",
             "Type": "Trail/Path (1-3 ft.)",
             "Surface": "soil",
             "Miles": 0.04252751,
@@ -14250,9 +14370,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 451,
             "GeoObjNumber": 106,
             "Name": "Overlook Trail",
-            "Type": null,
+            "Type": "pedestrian path",
             "Surface": "chipseal",
             "Miles": 0.10256231,
             "Shape_Length": 235.533228349072
@@ -14506,6 +14627,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 452,
             "GeoObjNumber": 989,
             "Name": "Overlook Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -14530,9 +14652,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 453,
             "GeoObjNumber": 877,
             "Name": "Overlook Trail",
-            "Type": null,
+            "Type": "pedestrian path",
             "Surface": "chipseal",
             "Miles": 0.12396833,
             "Shape_Length": 284.44732499175393
@@ -14826,6 +14949,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 454,
             "GeoObjNumber": 875,
             "Name": "Overlook Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -14910,6 +15034,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 455,
             "GeoObjNumber": 366,
             "Name": "Overlook Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -15046,9 +15171,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 456,
             "GeoObjNumber": 2484,
             "Name": "Overlook Trail",
-            "Type": null,
+            "Type": "pedestrian trail",
             "Surface": "chipseal",
             "Miles": 0.01007159,
             "Shape_Length": 23.11318500247011
@@ -15098,9 +15224,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 457,
             "GeoObjNumber": 367,
             "Name": "site trail (HA)",
-            "Type": null,
+            "Type": "pedestrian path",
             "Surface": "chipseal",
             "Miles": 0.01146881,
             "Shape_Length": 26.317508933046085
@@ -15154,9 +15281,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 458,
             "GeoObjNumber": 881,
             "Name": "site trail (HA)",
-            "Type": null,
+            "Type": "pedestrian path",
             "Surface": "concrete",
             "Miles": 0.01855149,
             "Shape_Length": 42.54028064499008
@@ -15178,9 +15306,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 459,
             "GeoObjNumber": 882,
-            "Name": "site trail (HA)",
-            "Type": null,
+            "Name": "Site Trail (HA)",
+            "Type": "pedestrian path",
             "Surface": "chipseal",
             "Miles": 0.01423762,
             "Shape_Length": 32.64825167123037
@@ -15206,9 +15335,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 460,
             "GeoObjNumber": 372,
             "Name": "Overlook Trail",
-            "Type": null,
+            "Type": "pedestrian path",
             "Surface": "chipseal",
             "Miles": 0.07120669,
             "Shape_Length": 163.3631218952945
@@ -15302,9 +15432,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 461,
             "GeoObjNumber": 370,
             "Name": "Maple Trail (HA)",
-            "Type": null,
+            "Type": "pedestrian path",
             "Surface": "chipseal",
             "Miles": 0.07010095,
             "Shape_Length": 160.9632615358166
@@ -15414,6 +15545,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 462,
             "GeoObjNumber": 997,
             "Name": "Maple Trail (HA)",
             "Type": "Trail/Path (1-3 ft.)",
@@ -15494,6 +15626,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 463,
             "GeoObjNumber": 996,
             "Name": "Hawthorn Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -15662,6 +15795,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 464,
             "GeoObjNumber": 1000,
             "Name": "Maple Trail (HA)",
             "Type": "Trail/Path (1-3 ft.)",
@@ -15922,6 +16056,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 465,
             "GeoObjNumber": 888,
             "Name": "Walnut Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -16082,6 +16217,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 466,
             "GeoObjNumber": 589,
             "Name": "Walnut Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -16146,6 +16282,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 467,
             "GeoObjNumber": 588,
             "Name": "Hawthorn Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -16182,6 +16319,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 468,
             "GeoObjNumber": 373,
             "Name": "Hawthorn Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -16358,8 +16496,9 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 469,
             "GeoObjNumber": 374,
-            "Name": "site trail (HA)",
+            "Name": "Site Trail (HA)",
             "Type": "Trail/Path (1-3 ft.)",
             "Surface": "soil",
             "Miles": 0.0694189,
@@ -16506,6 +16645,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 470,
             "GeoObjNumber": 884,
             "Name": "Hawthorn Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -16598,6 +16738,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 471,
             "GeoObjNumber": 583,
             "Name": "Maple Trail (HA)",
             "Type": "Trail/Path (1-3 ft.)",
@@ -16678,6 +16819,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 472,
             "GeoObjNumber": 368,
             "Name": "Wildwood Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -16774,6 +16916,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 473,
             "GeoObjNumber": 883,
             "Name": "Wildwood Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -17202,6 +17345,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 474,
             "GeoObjNumber": 577,
             "Name": "Hawthorn Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -17246,8 +17390,9 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 475,
             "GeoObjNumber": 908,
-            "Name": "site trail (HA)",
+            "Name": "Site Trail (HA)",
             "Type": "Trail/Path (1-3 ft.)",
             "Surface": "soil",
             "Miles": 0.05181117,
@@ -17306,6 +17451,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 476,
             "GeoObjNumber": 909,
             "Name": "Hawthorn Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -17366,6 +17512,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 477,
             "GeoObjNumber": 212,
             "Name": "Wildwood Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -17418,6 +17565,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 478,
             "GeoObjNumber": 2342,
             "Name": "Wildwood Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -17722,6 +17870,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 479,
             "GeoObjNumber": 2343,
             "Name": "MAC Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -18354,8 +18503,9 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 480,
             "GeoObjNumber": 2551,
-            "Name": "connector trail",
+            "Name": "MAC connector trail",
             "Type": "Trail/Path (1-3 ft.)",
             "Surface": "soil",
             "Miles": 0.02864452,
@@ -18382,6 +18532,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 481,
             "GeoObjNumber": 2550,
             "Name": "MAC Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -18754,6 +18905,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 482,
             "GeoObjNumber": 365,
             "Name": "Wildwood Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -19326,6 +19478,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 483,
             "GeoObjNumber": 952,
             "Name": "Wildwood Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -19610,9 +19763,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 484,
             "GeoObjNumber": 570,
             "Name": "Japanese Garden Trail",
-            "Type": null,
+            "Type": "Trail/Path (1-3 ft.)",
             "Surface": "soil",
             "Miles": 0.17920345,
             "Shape_Length": 411.8433863992497
@@ -19838,9 +19992,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 485,
             "GeoObjNumber": 850,
             "Name": "Fairview Trail",
-            "Type": null,
+            "Type": "Trail/Path (1-3 ft.)",
             "Surface": "soil",
             "Miles": 0.07861655,
             "Shape_Length": 180.45048849899473
@@ -19950,9 +20105,10 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 486,
             "GeoObjNumber": 848,
             "Name": "Fairview Trail",
-            "Type": null,
+            "Type": "Trail/Path (1-3 ft.)",
             "Surface": "soil",
             "Miles": 0.05949806,
             "Shape_Length": 136.72639261176639
@@ -20066,6 +20222,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 487,
             "GeoObjNumber": 2552,
             "Name": "MAC Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -20130,6 +20287,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 488,
             "GeoObjNumber": 2553,
             "Name": "connector trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -20346,6 +20504,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 489,
             "GeoObjNumber": 2554,
             "Name": "MAC Trail",
             "Type": "Trail/Path (1-3 ft.)",
@@ -20846,6 +21005,7 @@ export const hoytAndWashParkTrails = [
     {
         "type": "Feature",
         "properties": {
+            "TrailId": 490,
             "GeoObjNumber": 2555,
             "Name": "MAC Firelane Connector",
             "Type": "Firelane",
