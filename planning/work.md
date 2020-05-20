@@ -58,3 +58,7 @@
 * 6:10pm - finalized geojson data for new trail segments and now starting to create db entries for each new segment.
 
 * 9:40pm - finished about 1/2 of remaining data seeding.
+
+### Wednesday, May 20th
+
+* 7:20am - transfer new seed data to placeholder file in this repo; start working on remaining seed data
