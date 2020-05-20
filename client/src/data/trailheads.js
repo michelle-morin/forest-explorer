@@ -2,7 +2,6 @@ export const trailheads = [
   {
     "type": "Feature",
     "properties": {
-        "TrailId": 307,
         "GeoObjNumber": 2,
         "Name": "Wildwood-Newberry Trailhead",
         "Type": "Trailhead",
@@ -19,7 +18,6 @@ export const trailheads = [
   {
     "type": "Feature",
     "properties": {
-        "TrailId": 308,
         "GeoObjNumber": 3,
         "Name": "Newton Road Trailhead",
         "Type": "Trailhead",
@@ -36,7 +34,6 @@ export const trailheads = [
   {
     "type": "Feature",
     "properties": {
-        "TrailId": 309,
         "GeoObjNumber": 4,
         "Name": "Germantown: Wildwood",
         "Type": "Trailhead",
@@ -53,7 +50,6 @@ export const trailheads = [
   {
     "type": "Feature",
     "properties": {
-        "TrailId": 310,
         "GeoObjNumber": 5,
         "Name": "Germantown: Leif Erikson",
         "Type": "Trailhead",
@@ -70,7 +66,6 @@ export const trailheads = [
   {
     "type": "Feature",
     "properties": {
-        "TrailId": 311,
         "GeoObjNumber": 6,
         "Name": "Springville Road Trailhead",
         "Type": "Trailhead",
@@ -87,7 +82,6 @@ export const trailheads = [
   {
     "type": "Feature",
     "properties": {
-        "TrailId": 312,
         "GeoObjNumber": 7,
         "Name": "Ridge Trailhead",
         "Type": "Trailhead",
@@ -104,7 +98,6 @@ export const trailheads = [
   {
     "type": "Feature",
     "properties": {
-        "TrailId": 313,
         "GeoObjNumber": 8,
         "Name": "Upper Saltzman Road & Firelane 5",
         "Type": "Trailhead",
@@ -121,7 +114,6 @@ export const trailheads = [
   {
     "type": "Feature",
     "properties": {
-        "TrailId": 314,
         "GeoObjNumber": 9,
         "Name": "Lower Saltzman Road Trailhead",
         "Type": "Trailhead",
@@ -138,7 +130,6 @@ export const trailheads = [
   {
     "type": "Feature",
     "properties": {
-        "TrailId": 315,
         "GeoObjNumber": 10,
         "Name": "Forest Lane Trailhead",
         "Type": "Trailhead",
@@ -155,7 +146,6 @@ export const trailheads = [
   {
     "type": "Feature",
     "properties": {
-        "TrailId": 316,
         "GeoObjNumber": 11,
         "Name": "NW 53rd: Wildwood",
         "Type": "Trailhead",
@@ -172,7 +162,6 @@ export const trailheads = [
   {
     "type": "Feature",
     "properties": {
-        "TrailId": 317,
         "GeoObjNumber": 12,
         "Name": "NW 53rd: Dogwood & Wild Cherry",
         "Type": "Trailhead",
@@ -189,7 +178,6 @@ export const trailheads = [
   {
     "type": "Feature",
     "properties": {
-        "TrailId": 318,
         "GeoObjNumber": 13,
         "Name": "NW 53rd Ave: Birch Trail/Holman Lane",
         "Type": "Trailhead",
@@ -206,7 +194,6 @@ export const trailheads = [
   {
     "type": "Feature",
     "properties": {
-        "TrailId": 319,
         "GeoObjNumber": 14,
         "Name": "Thurman: Leif Erikson Drive",
         "Type": "Trailhead",
@@ -223,7 +210,6 @@ export const trailheads = [
   {
     "type": "Feature",
     "properties": {
-        "TrailId": 320,
         "GeoObjNumber": 15,
         "Name": "Aspen Trailhead",
         "Type": "Trailhead",
@@ -240,7 +226,6 @@ export const trailheads = [
   {
     "type": "Feature",
     "properties": {
-        "TrailId": 321,
         "GeoObjNumber": 16,
         "Name": "Lower Macleay Park Entrance",
         "Type": "Trailhead",
@@ -257,7 +242,6 @@ export const trailheads = [
   {
     "type": "Feature",
     "properties": {
-        "TrailId": 322,
         "GeoObjNumber": 17,
         "Name": "Holman Lane Entrance",
         "Type": "Trailhead",
@@ -274,7 +258,6 @@ export const trailheads = [
   {
     "type": "Feature",
     "properties": {
-        "TrailId": 323,
         "GeoObjNumber": 18,
         "Name": "Tunnel & Cumberland Trails Entrance",
         "Type": "Trailhead",
@@ -291,7 +274,6 @@ export const trailheads = [
   {
     "type": "Feature",
     "properties": {
-        "TrailId": 324,
         "GeoObjNumber": 19,
         "Name": "Upper Macleay Park Entrance",
         "Type": "Trailhead",
@@ -308,7 +290,6 @@ export const trailheads = [
   {
     "type": "Feature",
     "properties": {
-        "TrailId": 325,
         "GeoObjNumber": 20,
         "Name": "Pittock Mansion site",
         "Type": "Trailhead",
