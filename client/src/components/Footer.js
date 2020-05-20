@@ -1,21 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const FooterWrapper = styled.div`
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1rem;
+  border-top: 1px solid rgba(0,0,0,.75);
+  color: rgba(0,0,0,.75);
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+  padding: 1%;
+`;
+
 function Footer() {
-
-  const FooterWrapper = styled.div`
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    border-top: 1px solid rgba(0,0,0,.75);
-    color: rgba(0,0,0,.75);
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    padding-top: 1%;
-    padding-bottom: 1%;
-  `;
-
   const linkStyle = {
     color: 'rgba(0,0,0)',
     fontWeight: 'bolder'
