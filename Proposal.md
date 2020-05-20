@@ -21,18 +21,19 @@ I hope that this application empowers people to explore lower-trafficked and/or 
 * The backend, written in C#, will be a .NET web api with a seeded MySQL database
 * The database will include at least one table (trails). Each entry in the trails table will hold data for a specific trail segment in forest park (e.g., distance in miles, type of trail, surface type, and connecting trails on either end of the segment).
 * The frontend will make API calls to the backend, to obtain trail information for route planning.
-* I seeded the database manually based on geojson data obtained from the [Portland OpenMaps Parks Trails API](https://gis-pdx.opendata.arcgis.com/datasets/parks-trails). This process began by wrangling a massive amount of geojson data (every trail/path/greenway/shared corridor in Portland) into a dataset including only trail and road segments in Forest Park. The data obtained from the API included a name, surface type, trail type, and distance in miles for each trail segment, among other information. However, the data did not include information for verifying routes/connecting trails, aside from geographic coordinates of each linestring. To simplify the route verification process, I created my own database schema including adjoining trail information (four potential connecting trails at each end of each trail segment) as well as trail details (name, surface type, type of trail, and distance in miles) for each trail entry.
+* I seeded the database manually based on geojson data obtained from the [Portland OpenMaps Parks Trails API](https://gis-pdx.opendata.arcgis.com/datasets/parks-trails). This process began by wrangling a massive amount of geojson data (every trail/path/greenway/shared corridor in Portland) into a dataset including only trail and road segments in Forest Park. The data obtained from the API included a name, surface type, trail type, and distance in miles for each trail segment, among other information. However, the data did not include information for verifying routes/connecting trails, aside from geographic coordinates of each linestring, which didn't always match a coordinate of a neighboring trail. To perform route verification, I created my own database schema including adjoining trail information (four potential connecting trails at each end of each trail segment) as well as trail details (name, surface type, type of trail, and distance in miles) for each trail entry.
 
 ### Stretch Goals
 
+* add Washington Park and Hoyt Arboretum trails
+  - completed 5/20/2020
 * implement user login/account functionality
   * I might use Identity to manage users, passwords, profile data, roles, claims, tokens, email confirmation, and more.
 * incorporate the ability to store routes to a user account
 * incorporate the ability to determine the trailhead(s) closest to a route, and display details for that trailhead (e.g., geographical coordinates and parking availability)
-  * This feature may require adding a trailheads table to the database. Alternatively, I may store each trailhead as an entry in the trails table with a “type” property of “trailhead”.
 * render elevation data for Forest Park
-  * I would like to explore using the deckGL library for this feature.
-* add versioning and swagger documentation to the API
+* add swagger specification and swagger UI for the API
+  - completed 5/19/2020
 * add authentication/authorization to the API, to only serve requests from the frontend client application
 * allow users to remove individual trail segments from a route
 

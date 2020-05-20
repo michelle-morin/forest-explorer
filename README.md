@@ -2,7 +2,7 @@
 
 #### _Epicodus Capstone Project_
 
-#### By: Michelle Morin, May 8, 2020
+#### By: Michelle Morin, May 8-20, 2020
 
 ## Description
 
