@@ -125,6 +125,7 @@ In a separate Terminal or PowerShell window, enter the following commands at the
 * Jest
 * Redux
 * React-Redux Bindings
+* Redux-Thunk Middleware
 * npm
 * React-Router
 * Leaflet.js
