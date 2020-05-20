@@ -10,8 +10,8 @@ import SurfaceChart from './SurfaceChart';
 import '../index.css';
 
 const SideBar = styled.div`
-  width: ${props => props.width};
-  height: ${props => props.height};
+  min-width: 30vw;
+  height: auto;
   position: absolute;
   z-index: 10000;
   top: 15vh;
@@ -21,6 +21,17 @@ const SideBar = styled.div`
   border: 1px solid  #D5D6DC;
   box-shadow: 0 6px 12px 0 rgba(0,0,0,0.25), 0 6px 12px 0 rgba(0,0,0,0.22);
   padding: 3%;
+  @media (max-width: 1024px) and (max-height: 1366px) {
+    margin-right: 2%;
+  }
+  @media (max-width: 500px) {
+    top: 75vh;
+    left: 0;
+    width: 100vw;
+    min-height: 25vh;
+    border-radius: 0px;
+    background-color: rgb(247,247,239);
+  }
 `;
 
 const ButtonWrapper = styled.div`
@@ -193,7 +204,7 @@ class RouteBuilder extends React.Component {
 
       return (
         <React.Fragment>
-          <Map center={[45.57, -122.7163]} zoom={13} zoomControl={false}>
+          <Map className="route-map" center={[45.57, -122.7163]} zoom={13} zoomControl={false}>
             <TileLayer 
               url="http://d.sm.mapstack.stamen.com/(toner-background,(watercolor,$000[@20])[lighter],terrain-background[overlay])/{z}/{x}/{y}.png"
               maxZoom={19}
@@ -201,7 +212,7 @@ class RouteBuilder extends React.Component {
             <GeoJSON id="trailLayer" data={trailData} onEachFeature={onEachFeature} />
             <GeoJSON id="hwTrailLayer" data={hoytAndWashParkTrails} onEachFeature={onEachFeature} />
           </Map>
-          <SideBar width="30vw" height="auto">
+          <SideBar className="sidebar">
             {this.showInstructions()}
             <ButtonWrapper>
               {showAddTrailButton()}

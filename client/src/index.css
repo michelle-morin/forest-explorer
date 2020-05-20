@@ -19,11 +19,6 @@ body {
   height: 100vh;
 }
 
-.route-map {
-  width: 70%;
-  height: 100vh;
-}
-
 .custom-popup .leaflet-popup-content-wrapper, .custom-popup .leaflet-popup-tip {
   background-color: #eff3ef;
   color: #111111;
@@ -98,5 +93,18 @@ h3.instructions {
     padding-top: 26.5px;
     padding-bottom: 26.5px;
     line-height: 27px;
+  }
+}
+
+@media (max-width: 500px) {
+  .route-map {
+    width: 100%;
+    height: 75vh;
+  }
+}
+
+@media (max-width: 320px) {
+  a.navbar-brand {
+    font-size: 4rem;
   }
 }
