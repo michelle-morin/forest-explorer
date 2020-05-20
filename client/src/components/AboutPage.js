@@ -21,9 +21,8 @@ function AboutPage() {
       <AboutWrapper>
         <Typist cursor={{ hideWhenDone: true }}>
           <p>Welcome!</p>
-          <p>This is a passion project fueled by my love of trail running in Forest Park.</p>
-          <p>Forest Park is a forested ecosystem spanning over 5,100 acres along the northwest urban boundary of Portland, Oregon.</p>
-          <p>In addition to the vast trail network beneath a canopy of old growth and second growth douglas firs, Forest Park is home to a diverse range of flora and fauna.</p>
+          <p>This is a passion project fueled by my love of trail running.</p>
+          <p>Portland's west hills include a vast trail network. Forest Park spans over 5,100 acres along Portland's northwest urban boundary. Trails within the Hoyt Aboretum weave between 2,300 species of trees and shrubs from six continents. In addition to forest, Washington Park includes an immaculate rose test garden, a zoo, and museums.</p>
           <p>While this application encourages trail use, please be mindful of your impact on the trails and fragile ecosystems of our urban wilderness.</p>
         </Typist>
       </AboutWrapper>
