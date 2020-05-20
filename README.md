@@ -6,14 +6,15 @@
 
 ## Description
 
-This application allows users to familiarize themselves with trails in Forest Park, the network of trails along Portland’s northwest urban boundary. Users are able to learn about each trail as well as generate running/hiking routes.
+This application allows users to familiarize themselves with trails in Forest Park, the Hoyt Arboretum, and Washington Park. These parks include a connected network of trails surrounding Portland’s western urban boundary. Users are able to learn about each trail as well as generate running/hiking routes.
 
 ## Specification user stories:
-* A user should be able to navigate to a trail exploration page displaying a map of Forest Park. The map should include geojson features representing each trail segment in Forest Park.
-* A user should be able to click any trail segment in forest park to learn about the trail (name, distance in miles, type of trail, and surface type).
+* A user should be able to navigate to a trail exploration page displaying a map of Forest Park, the Hoyt Arboretum, and Washington Park. The map should include geojson features representing each trail segment.
+* A user should be able to click any trail segment on the map to learn about the trail (name, distance in miles, type of trail, and surface type).
 * A user should be able to navigate to a route planning page, where the user can dynamically add trail segments to a running/hiking route.
 * A user should be able to delete a running/hiking route.
 * A user should be able to view which trails are currently in their running/hiking route based on color change of geojson features on the map.
+* A user should be able to view data about their route, including total distance and types of ground surfaces along their route.
 
 ## Component Tree
 ![component tree](/planning/component-tree.png)
@@ -114,6 +115,7 @@ In a separate Terminal or PowerShell window, enter the following commands at the
 * Entity Framework Core v2.2
 * Swagger specification
 * NSwag middleware
+* [Portland Maps OpenData](https://gis-pdx.opendata.arcgis.com/)
 
 ### Frontend:
 * Test Driven Development
