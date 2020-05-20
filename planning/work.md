@@ -53,4 +53,4 @@
 
 * 8am-2pm tracked via commit history
 
-* 2pm - decided to incorporate trails in washington park and the hoyt arboretum; spending the remainder of the day generating database entries and geojson data for each of these trails.
+* 2pm-5pm - decided to incorporate trails in washington park and the hoyt arboretum; spent the remainder of the day generating database entries and geojson data for each of these trails.
