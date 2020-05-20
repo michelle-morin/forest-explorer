@@ -76,10 +76,10 @@ Add the MySQL environment variable to the System PATH. Instructions for Windows 
 
 Enter the following commands in Terminal (macOS) or PowerShell (Windows):
 * ``cd desktop``
-* ``git clone https://github.com/michelle-morin/forest-park-trails``
-* ``cd forest-park-trails``
+* ``git clone https://github.com/michelle-morin/forest-explorer``
+* ``cd forest-explorer``
 
-To view/edit the source code of this application, open the contents of the forest-park-trails directory in a text editor or IDE of your choice. To open all contents of the ``forest-park-trails`` directory in Visual Studio Code on macOS, enter the command ``code .`` in Terminal (macOS) or PowerShell (Windows).
+To view/edit the source code of this application, open the contents of the forest-explorer directory in a text editor or IDE of your choice. To open all contents of the ``forest-explorer`` directory in Visual Studio Code on macOS, enter the command ``code .`` in Terminal (macOS) or PowerShell (Windows).
 
 Next, run the TrailsLookup web API backend by entering the following commands in Terminal (macOS) or PowerShell (Windows):
 * ``cd TrailsLookup``
@@ -88,7 +88,7 @@ Next, run the TrailsLookup web API backend by entering the following commands in
 * ``dotnet ef database update``
 * ``dotnet watch run``
 
-In a separate Terminal or PowerShell window, enter the following commands at the root of the ``forest-park-trails`` directory to run the React client front-end:
+In a separate Terminal or PowerShell window, enter the following commands at the root of the ``forest-explorer`` directory to run the React client front-end:
 * ``cd client``
 * ``npm install``
 * ``npm start``
