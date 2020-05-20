@@ -88,7 +88,7 @@ class TrailMap extends React.Component {
     };
     
     return (
-      <Map center={[45.57, -122.7163]} zoomControl={false} zoom={13}>
+      <Map center={[45.57, -122.7163]} zoomControl={false} zoom={13} touchZoom={true} tap={true} dragging={true} doubleClickZoom={true}>
         <TileLayer 
           url="http://d.sm.mapstack.stamen.com/(toner-background,(watercolor,$000[@20])[lighter],terrain-background[overlay])/{z}/{x}/{y}.png"
           maxZoom={19}

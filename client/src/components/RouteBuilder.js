@@ -204,7 +204,7 @@ class RouteBuilder extends React.Component {
 
       return (
         <React.Fragment>
-          <Map className="route-map" center={[45.57, -122.7163]} zoom={13} zoomControl={false}>
+          <Map className="route-map" center={[45.57, -122.7163]} zoom={13} zoomControl={false} touchZoom={true} tap={true} dragging={true} doubleClickZoom={true}>
             <TileLayer 
               url="http://d.sm.mapstack.stamen.com/(toner-background,(watercolor,$000[@20])[lighter],terrain-background[overlay])/{z}/{x}/{y}.png"
               maxZoom={19}
