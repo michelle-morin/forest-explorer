@@ -125,13 +125,13 @@ In a separate Terminal or PowerShell window, enter the following commands at the
 * Jest
 * Redux
 * React-Redux Bindings
-* Redux-Thunk Middleware
+* Thunk Middleware
 * npm
 * React-Router
 * Leaflet.js
-* [React-Leaflet](https://react-leaflet.js.org/)
+* [React Leaflet](https://react-leaflet.js.org/)
 * [Styled Components](https://styled-components.com/)
-* [React-Typist](https://github.com/jstejada/react-typist)
+* [React Typing Animation](https://www.npmjs.com/package/react-typing-animation)
 * [Victory](https://formidable.com/open-source/victory/) (for route data visualization)
 * HTML
 * CSS
