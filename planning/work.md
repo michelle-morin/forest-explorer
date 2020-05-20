@@ -62,3 +62,7 @@
 ### Wednesday, May 20th
 
 * 7:20am - transfer new seed data to placeholder file in this repo; start working on remaining seed data
+
+* 3:30pm - finished making all views responsive across screen types and removing commented out code.
+
+* 3:30-? - planning and practicing product pitch/presentation
