@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { getAllTrailsFromApi } from '../actions';
 import { Map, TileLayer, GeoJSON } from 'react-leaflet';
 import { trailData } from '../data/trails.js';
+import { hoytAndWashParkTrails } from '../data/washPark.js';
 import styled from 'styled-components';
 import { Button } from 'react-bootstrap';
 import SurfaceChart from './SurfaceChart';
@@ -198,6 +199,7 @@ class RouteBuilder extends React.Component {
               maxZoom={19}
             />
             <GeoJSON id="trailLayer" data={trailData} onEachFeature={onEachFeature} />
+            <GeoJSON id="hwTrailLayer" data={hoytAndWashParkTrails} onEachFeature={onEachFeature} />
           </Map>
           <SideBar width="30vw" height="auto">
             {this.showInstructions()}
