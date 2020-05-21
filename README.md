@@ -6,7 +6,7 @@
 
 ## Description
 
-This application allows users to familiarize themselves with trails in Forest Park, the Hoyt Arboretum, and Washington Park. These parks include a connected network of trails surrounding Portland’s western urban boundary. Users are able to learn about each trail as well as generate running/hiking routes.
+This application allows users to familiarize themselves with trails in Forest Park, the Hoyt Arboretum, and Washington Park. These parks include a connected network of trails surrounding Portland’s western urban boundary. Users are able to learn about each trail as well as generate running/hiking routes. This application is responsive across desktop, mobile, and tablet viewports. 
 
 ## Specification user stories:
 * A user should be able to navigate to a trail exploration page displaying a map of Forest Park, the Hoyt Arboretum, and Washington Park. The map should include geojson features representing each trail segment.

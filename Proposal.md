@@ -27,11 +27,15 @@ I hope that this application empowers people to explore lower-trafficked and/or 
 
 * add Washington Park and Hoyt Arboretum trails
   - completed 5/20/2020
+* fully responsive for mobile devices, including tablets
+  - completed 5/20/2020
 * implement user login/account functionality
   * I might use Identity to manage users, passwords, profile data, roles, claims, tokens, email confirmation, and more.
 * incorporate the ability to store routes to a user account
 * incorporate the ability to determine the trailhead(s) closest to a route, and display details for that trailhead (e.g., geographical coordinates and parking availability)
+  - I incorporated markers for all major trailheads on 5/19/2020, though they are not yet incorporated in the route planning process.
 * render elevation data for Forest Park
+  - this may take the form of an elevation profile data graphic for each route 
 * add swagger specification and swagger UI for the API
   - completed 5/19/2020
 * add authentication/authorization to the API, to only serve requests from the frontend client application
