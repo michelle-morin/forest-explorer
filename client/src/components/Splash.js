@@ -67,18 +67,18 @@ function Splash() {
 
   return (
     <React.Fragment>
-      <img src={path} style={backgroundStyles} alt="running path" />
+      <img src={path} style={backgroundStyles} alt="watercolor running path" />
       <h1 style={brandStyles}>Forest Explorer</h1>
       <div style={linkBoxStyles}>
         <Link to="/explore" style={linkStyle}>Explore</Link>
         <Link to="/plan" style={linkStyle}>Plan</Link>
         <Link to="/about" style={linkStyle}>About</Link>
       </div>
-      <img src={tree} style={treeOneStyle} alt="watercolor tree" />
-      <img src={tree} style={treeTwoStyle} alt="watercolor tree" />
-      <img src={tree} style={treeThreeStyle} alt="watercolor tree" />
-      <img src={tree} style={treeFourStyle} alt="watercolor tree" />
-      <img src={tree} style={treeFiveStyle} alt="watercolor tree" />
+      <img src={tree} style={treeOneStyle} alt="watercolor douglas fir tree painted with the iconic blue diamond milemarkers of Wildwood Trail" />
+      <img src={tree} style={treeTwoStyle} alt="watercolor douglas fir tree painted with the iconic blue diamond milemarkers of Wildwood Trail" />
+      <img src={tree} style={treeThreeStyle} alt="watercolor douglas fir tree painted with the iconic blue diamond milemarkers of Wildwood Trail" />
+      <img src={tree} style={treeFourStyle} alt="watercolor douglas fir tree painted with the iconic blue diamond milemarkers of Wildwood Trail" />
+      <img src={tree} style={treeFiveStyle} alt="watercolor douglas fir tree painted with the iconic blue diamond milemarkers of Wildwood Trail" />
     </React.Fragment>
   );
 }
