@@ -50,8 +50,8 @@ function Splash() {
   const treeThreeStyle = {
     position: 'absolute',
     left: '85vw',
-    top: '-15vh',
-    transform: 'scale(.35)'
+    top: '-25vh',
+    transform: 'scale(.3)'
   }
   const treeFourStyle = {
     position: 'absolute',
@@ -63,7 +63,7 @@ function Splash() {
     position: 'absolute',
     left: '60vw',
     top: '-18vh',
-    transform: 'scale(.4)'
+    transform: 'scale(.35)'
   }
 
   return (
