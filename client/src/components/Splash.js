@@ -4,18 +4,12 @@ import tree from './../assets/img/tree.png';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-const SplashWrapper = styled.div`
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-`;
-
 const RunningPath = styled.img`
   position: relative;
   top: 0;
+  left: 0;
   bottom: 0;
   right: 0;
-  left: 0;
   height: 100vh;
   width: 100vw;
   @media (max-width: 500px) {
@@ -144,7 +138,7 @@ function Splash() {
   }
 
   return (
-    <SplashWrapper>
+    <React.Fragment>
       <RunningPath src={path} alt="watercolor running path" />
       <SplashTitle>Forest Explorer</SplashTitle>
       <LinkBox>
@@ -157,7 +151,7 @@ function Splash() {
       <TreeThree src={tree} alt="watercolor douglas fir tree painted with the iconic blue diamond milemarkers of Wildwood Trail" />
       <TreeFour src={tree} alt="watercolor douglas fir tree painted with the iconic blue diamond milemarkers of Wildwood Trail" />
       <TreeFive src={tree} alt="watercolor douglas fir tree painted with the iconic blue diamond milemarkers of Wildwood Trail" />
-    </SplashWrapper>
+    </React.Fragment>
   );
 }
 
