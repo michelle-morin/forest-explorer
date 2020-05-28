@@ -52,10 +52,10 @@ const LinkBox = styled.div`
 
 const TreeOne = styled.img`
   position: absolute;
-  left: 0vw;
-  top: 30vh;
+  left: -2vw;
+  top: 11.5vh;
   transform: scale(.75);
-  @media (max-width: 500px) {
+  @media (max-width: 700px) {
     transform: scale(.35);
     bottom: 0;
     left: -38vw;
@@ -67,7 +67,7 @@ const TreeTwo = styled.img`
   left: 25vw;
   top: 13vh;
   transform: scale(.55);
-  @media (max-width: 500px) {
+  @media (max-width: 700px) {
     display: none;
   }
 `;
@@ -75,9 +75,9 @@ const TreeTwo = styled.img`
 const TreeThree = styled.img`
   position: absolute;
   left: 85vw;
-  top: -15vh;
+  top: -25vh;
   transform: scale(.35);
-  @media (max-width: 500px) {
+  @media (max-width: 700px) {
     transform: scale(.2);
     top: 5vh;
     left: 15vw;
@@ -89,7 +89,7 @@ const TreeFour = styled.img`
   left: 50vw;
   top: 7vh;
   transform: scale(.45);
-  @media (max-width: 500px) {
+  @media (max-width: 700px) {
     transform: scale(.15);
     top: -29vh;
     left: 40vw;
@@ -101,7 +101,7 @@ const TreeFive = styled.img`
   left: 60vw;
   top: -18vh;
   transform: scale(.4);
-  @media (max-width: 500px) {
+  @media (max-width: 700px) {
     display: none;
   }
 `;
