@@ -27,7 +27,8 @@ function Splash() {
     fontFamily: 'Architectural',
     left: '12vw',
     top: '28vh',
-    fontSize: '3rem'
+    fontSize: '3rem',
+    zIndex: '10000'
   }
   const linkStyle = {
     color: '#111111',
@@ -36,8 +37,8 @@ function Splash() {
   }
   const treeOneStyle = {
     position: 'absolute',
-    left: '0vw',
-    top: '30vh',
+    left: '-2vw',
+    top: '11.5vh',
     transform: 'scale(.75)'
   }
   const treeTwoStyle = {
