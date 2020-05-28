@@ -34,6 +34,7 @@ const SplashTitle = styled.h1`
   text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
   @media (max-width: 500px) {
     font-size: 4rem;
+    z-index: 10000;
   }
 `;
 
@@ -47,61 +48,88 @@ const LinkBox = styled.div`
   @media (max-width: 500px) {
     top: 35vh;
     font-size: 2rem;
+    z-index: 10000;
   }
 `;
 
 const TreeOne = styled.img`
   position: absolute;
-  left: -2vw;
-  top: 11.5vh;
-  transform: scale(.75);
-  @media (max-width: 700px) {
-    transform: scale(.35);
-    bottom: 0;
-    left: -38vw;
+  left: 0vw;
+  bottom: 0vh;
+  max-height: 75%;
+  width: auto;
+  @media (max-width: 1024px) and (max-height: 1366px) {
+    max-height: 40%;
+    height: auto;
+    left: -2vw;
+  }
+  @media (max-width: 768px) {
+    max-height: 40%;
+    height: auto;
+    left: -2vw;
   }
 `;
 
 const TreeTwo = styled.img`
   position: absolute;
-  left: 25vw;
-  top: 13vh;
-  transform: scale(.55);
-  @media (max-width: 700px) {
+  left: 35vw;
+  top: 24vh;
+  max-height: 50%;
+  width: auto;
+  @media (max-width: 1024px) and (max-height: 1366px) {
+    display: none;
+  }
+  @media (max-width: 768px) {
     display: none;
   }
 `;
 
 const TreeThree = styled.img`
   position: absolute;
-  left: 85vw;
-  top: -25vh;
-  transform: scale(.35);
-  @media (max-width: 700px) {
-    transform: scale(.2);
-    top: 5vh;
-    left: 15vw;
+  left: 90vw;
+  top: 5vh;
+  max-height: 30%;
+  width: auto;
+  @media (max-width: 1024px) and (max-height: 1366px) {
+    max-height: 20%;
+    top: 10vh;
+    left: 85vw;
+  }
+  @media (max-width: 768px) {
+    max-height: 20%;
+    top: 10vh;
+    left: 85vw;
   }
 `;
 
 const TreeFour = styled.img`
   position: absolute;
-  left: 50vw;
-  top: 7vh;
-  transform: scale(.45);
-  @media (max-width: 700px) {
-    transform: scale(.15);
-    top: -29vh;
-    left: 40vw;
+  left: 58vw;
+  top: 28vh;
+  max-height: 40%;
+  width: auto;
+  @media (max-width: 1024px) and (max-height: 1366px) {
+    max-height: 25%;
+    top: 50vh;
+    left: 55vw;
+  }
+  @media (max-width: 768px) {
+    max-height: 25%;
+    top: 50vh;
+    left: 55vw;
   }
 `;
 
 const TreeFive = styled.img`
   position: absolute;
-  left: 60vw;
-  top: -18vh;
-  transform: scale(.4);
-  @media (max-width: 700px) {
+  left: 70vw;
+  top: 1vh;
+  max-height: 35%;
+  width: auto;
+  @media (max-width: 1024px) and (max-height: 1366px) {
+    display: none;
+  }
+  @media (max-width: 768px) {
     display: none;
   }
 `;
